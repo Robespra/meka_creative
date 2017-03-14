@@ -252,21 +252,21 @@ transition:All 1s 1s ease-in-out;
 -o-transition:All 1s 1s ease-in-out;
 }
 .bubble_none li:nth-child(2) {
-	width: 0px;
-	left: -1600px;
-transition:All 1s 2s ease-in-out;
--webkit-transition:All 1s 2s ease-in-out;
--moz-transition:All 1s 2s ease-in-out;
--o-transition:All 1s 2s ease-in-out;
+	width: 70%;
+	left: -2000px;
+transition:All 0.7s 2s ease-in-out;
+-webkit-transition:All 0.7s 2s ease-in-out;
+-moz-transition:All 0.7s 2s ease-in-out;
+-o-transition:All 0.7s 2s ease-in-out;
 }
 
 .bubble_none li:nth-child(3) {
-	width: 0px;
+	width: 0;
 	left: -1600px;
-transition:All 1s 3s ease-in-out;
--webkit-transition:All 1s 3s ease-in-out;
--moz-transition:All 1s 3s ease-in-out;
--o-transition:All 1s 3s ease-in-out;
+transition:All 1s 2.3s ease-in-out;
+-webkit-transition:All 1s 2.3s ease-in-out;
+-moz-transition:All 1s 2.3s ease-in-out;
+-o-transition:All 1s 2.3s ease-in-out;
 }
 
 
@@ -313,8 +313,12 @@ font-size: 0px;
 -o-transition:All 1s ease-in-out;
 }
 .cui_dialog_hide {opacity:0; z-index: -9999; position: absolute;}
-.cui_dialog_display {opacity:1; position:relative;z-index: 1;}
-.cui_dialog_greyed {opacity:0.4;
+.cui_dialog_display {opacity:1; position:relative;z-index: 1; 
+height: 45vh;
+
+
+}
+.cui_dialog_greyed {display:none;opacity:0.4;
 transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
 -webkit-transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
 -moz-transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
@@ -380,46 +384,67 @@ animation-duration: 2s;
 animation-iteration-count: 1; 
 transform-origin: 50%;
 }
-.cui_dialog_buttons, .cui_dialog_buttons1, .cui_dialog_buttons2, .cui_dialog_buttons3, .cui_dialog_buttons4 {position:absolute;padding-top:5%;text-align:right;clear: both; font-size:0em;right: -600px;
-transition:All 1s 3s ease-in-out;
--webkit-transition:All 1s 3s ease-in-out;
--moz-transition:All 1s 3s ease-in-out;
--o-transition:All 1s 3s ease-in-out;
 
+
+.cui_dialog_buttons {
+  display: none;
+margin-left: 1.25rem;
+text-align: left;
+list-style: none;
+    transition:All 1s 5s ease-in-out;
+-webkit-transition:All 1s 5s ease-in-out;
+-moz-transition:All 1s 5s ease-in-out;
+-o-transition:All 1s 5s ease-in-out;
 }
+
+
 .cui_dialog_buttons_displayed{
+  display: block;
 position: relative;
 right: 0;
 font-size: 1em;
 }
-.cui_dialog_buttons {
-margin-left: 1.25rem;
-text-align: left;
-list-style: none;
-}
+
 
 .cui_dialog_buttons li {
 display: inline-block;
     margin: 1%;
-background-color: #f1f1f1; border-radius: 10px; padding: 1% 3%;
 }
 .cui_dialog_buttons li a {
 color: #ff7473;
 }
-.cui_dialog_buttons_displayed .cui_btn_primary {
-font-size:1em;
+
+
+.cui_btn_primary {
+font-size: 0;
+background-color:transparent; 
 transition:All 1s 1s ease-in-out;
 -webkit-transition:All 1s 1s ease-in-out;
 -moz-transition:All 1s 1s ease-in-out;
 -o-transition:All 1s 1s ease-in-out;
 }
-.cui_dialog_buttons_displayed .cui_btn_secondary {
-font-size:0.7em;
+
+.cui_dialog_buttons_displayed li a.cui_btn_primary {
+  background-color: #f1f1f1;
+  border-radius: 10px; padding: 0.5em 0.7em;
+font-size:1em;
+}
+
+.cui_btn_secondary {
 transition:All 1s 2s ease-in-out;
 -webkit-transition:All 1s 2s ease-in-out;
 -moz-transition:All 1s 2s ease-in-out;
 -o-transition:All 1s 2s ease-in-out;
 }
+
+.cui_dialog_buttons_displayed a.cui_btn_secondary {
+font-size:0.7em;
+
+}
+
+
+
+
 .cui_first_buttons{
 position: relative;
 right: 0;
@@ -555,6 +580,33 @@ transform:  rotate(0deg) ;
 }
 
 
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.svgicon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.svgicon-meka_logo_app {
+  width: 12em;
+  height: 5em;
+  stroke: red;
+  fill: red;
+}
+
+.svgicon-paint-palette, .svgicon-drink-coffee, .svgicon-notebook-2, .svgicon-music-note, .svgicon-chef-hat {
+  width: 3.5em; height: 3.5em;
+}
 
 
 
