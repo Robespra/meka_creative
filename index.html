@@ -122,20 +122,22 @@
 <ul class="cui_after_cta_buttons cui_dialog_buttons">
 <li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_art','cui_first_button_art')">Art</a></li>
 <li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_design','cui_first_button_design')">Design</a></li>
-<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_business','cui_first_button_business')">Business</a></li>
-<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_sciences','cui_first_button_sciences')">Sciences</a></li>
-<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_programing','cui_first_button_programing')">Programing</a></li>
-<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button1','cui_first_button1')">Cooking</a></li>
+<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_business','cui_first_button_business')">Business</a></li>
+<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_sciences','cui_first_button_sciences')">Sciences</a></li>
+<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_programing','cui_first_button_programing')">Programing</a></li>
+<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button1','cui_first_button1')">Cooking</a></li>
 <li><a href="#cui_first_non" class="cui_btn_secondary cui_first_button2" onclick="track('ui_btn_primary cui_first_button_notsuretellmemore','ui_btn_primary cui_first_button_notsuretellmemore')">Not sure, tell me more about you, first...</a></li>
 </div> <!-- cui_dialog_buttons -->
 
 
-<div id ="cui_first_oui" class="cui_dialog cui_first_oui cui_dialog_hide">
+<div class="cui_dialog cui_first_oui cui_dialog_hide">
+<div class="cui_dialog_message">
 <ul class="cui_first_oui_message bubble_none message">
 <li>Okay. Well...</li> 
 <li>I am sorry, I am still learning to « evaluate » this domain. </li> 
 <li>Would you like me to inform you when I am finally ready to run the show?</li> 
 </ul>
+  </div> <!-- cui_dialog_message -->
 
 <div class="cui_dialog_buttons">
   <a href="#cui_second_theorie" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes, please</a><a href="#cui_first_non" class="cui_btn_secondary cui_first_oui_button2" onclick="track('cui_second_noemailtellmemore','cui_second_noemailtellmemore')">No, that’s not necessary, just tell me more about you</a>
@@ -144,7 +146,7 @@
 
 <div id="cui_first_non" class="cui_dialog cui_first_non cui_dialog_hide">
 <ul class="cui_first_non_message bubble_none message">
-<li>Très bien. </li>
+<li>So you want to know more about me...</li>
 <li>Nous vous souhaitons une excellente visite. N'hésitez pas à vous inscrire à notre newsletter!</li>
 </ul>
   </div> <!-- cui_dialog_message -->
@@ -269,8 +271,7 @@ $(".btn_cta_hero").click(function(e) {
    }, 2000);
     });
 
-
-    $(".cui_first_button1").click(function(e) {
+$(".cui_first_button1").click(function(e) {
     $(".cui_first_oui").removeClass("cui_dialog_hide");
     $(".cui_first_oui").addClass("cui_dialog_display");
     $(".cui_first_oui_message").addClass("bubble_displayed");
