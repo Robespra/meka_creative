@@ -49,6 +49,71 @@
 <path fill="none" stroke="#fff" stroke-width="1.3333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="M15.641 8.995c0 1.104-0.895 1.999-1.999 1.999s-1.999-0.895-1.999-1.999c0-1.104 0.895-1.999 1.999-1.999s1.999 0.895 1.999 1.999z"></path>
 </symbol>
 
+<symbol id="bg_triangle_round" viewBox="0 0 134.8 148.4">
+<title>bg_triangle_round</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-23.5003" y1="15.3995" x2="125.8853" y2="15.3995" gradientTransform="matrix(-0.8837 0.4681 -0.4681 -0.8837 126.4549 65.7797)">
+	<stop  offset="0" style="stop-color:#C2982E"/>
+	<stop  offset="0" style="stop-color:#A2792C"/>
+	<stop  offset="0.4607" style="stop-color:#CDA430"/>
+	<stop  offset="0.5618" style="stop-color:#CDA430"/>
+	<stop  offset="0.8202" style="stop-color:#F8D975"/>
+	<stop  offset="1" style="stop-color:#C2982E"/>
+	<stop  offset="1" style="stop-color:#A2792C"/>
+</linearGradient>
+<path opacity="0.54" fill="none" stroke="url(#SVGID_1_)" stroke-width="43" stroke-miterlimit="10" d="M109.7,29.9
+	c12,18.8-7.9,80.8-26.8,92.8c-18.8,12-44.5-4.2-56.5-23c-12-18.8-0.6-46.3,20.2-59.7C65.4,28,97.6,11.1,109.7,29.9z"/>
+</symbol>
+
+
+<symbol id="bg_round" viewBox="0 0 150.8 150.8">
+<title>bg_round</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="110.3895" y1="83.7706" x2="261.153" y2="83.7706" gradientTransform="matrix(0.7381 0.6747 -0.6747 0.7381 -5.221 -111.7853)">
+	<stop  offset="0" style="stop-color:#C2982E"/>
+	<stop  offset="0" style="stop-color:#A2792C"/>
+	<stop  offset="0.4607" style="stop-color:#CDA430"/>
+	<stop  offset="0.5618" style="stop-color:#CDA430"/>
+	<stop  offset="0.8202" style="stop-color:#F8D975"/>
+	<stop  offset="1" style="stop-color:#C2982E"/>
+	<stop  offset="1" style="stop-color:#A2792C"/>
+</linearGradient>
+<circle opacity="0.54" fill="none" stroke="url(#SVGID_1_)" stroke-width="43" stroke-miterlimit="10" cx="75.4" cy="75.4" r="53.9"/>
+</symbol>
+
+
+
+<symbol id="bg_square_round" viewBox="0 0 150.7 150.7">
+<title>bg_square_round</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-9.094947e-13" y1="75.3428" x2="150.6856" y2="75.3428">
+	<stop  offset="0" style="stop-color:#C2982E"/>
+	<stop  offset="0" style="stop-color:#A2792C"/>
+	<stop  offset="0.4607" style="stop-color:#CDA430"/>
+	<stop  offset="0.5618" style="stop-color:#CDA430"/>
+	<stop  offset="0.8202" style="stop-color:#F8D975"/>
+	<stop  offset="1" style="stop-color:#C2982E"/>
+	<stop  offset="1" style="stop-color:#A2792C"/>
+</linearGradient>
+<path opacity="0.54" fill="none" stroke="url(#SVGID_1_)" stroke-width="43" stroke-miterlimit="10" d="M110.4,113.5l-34.9,13.7
+	c-15.1,5.9-32.4-1.6-38.3-16.7L23.5,75.5c-5.9-15.1,1.6-32.4,16.7-38.3l34.9-13.7c15.1-5.9,32.4,1.6,38.3,16.7l13.7,34.9
+	C133.1,90.3,125.6,107.6,110.4,113.5z"/>
+</symbol>
+
+
+<symbol id="bg_triangle" viewBox="0 0 157.6 198.3">
+<title>bg_triangle</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="99.1584" x2="157.6243" y2="99.1584">
+	<stop  offset="0" style="stop-color:#C2982E"/>
+	<stop  offset="0" style="stop-color:#A2792C"/>
+	<stop  offset="0.4607" style="stop-color:#CDA430"/>
+	<stop  offset="0.5618" style="stop-color:#CDA430"/>
+	<stop  offset="0.8202" style="stop-color:#F8D975"/>
+	<stop  offset="1" style="stop-color:#C2982E"/>
+	<stop  offset="1" style="stop-color:#A2792C"/>
+</linearGradient>
+<polygon opacity="0.54" fill="none" stroke="url(#SVGID_1_)" stroke-width="43" stroke-miterlimit="10" points="21.8,163.7 
+	21.6,43.5 117.1,116.4 "/>
+</symbol>
+
+
 
 </defs>
 </svg>

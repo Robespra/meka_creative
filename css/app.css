@@ -275,8 +275,6 @@ width: 100%;
 left: 0;
 	}
 
-
-
 .bubble_displayed li{
 position: relative;
 left: 0;
@@ -284,6 +282,53 @@ height: auto;
 width: 100%;
 }
 
+.cui_dialog_buttons{
+  width: 0;
+  min-height:200px;
+  float: left;
+  margin-left: 1.25rem;
+  text-align: left;
+list-style: none;
+  position: absolute;
+  left: -1600px;
+transition:All 1s 3s ease-in-out;
+-webkit-transition:All 1s 3s ease-in-out;
+-moz-transition:All 1s 3s ease-in-out;
+-o-transition:All 1s 3s ease-in-out;
+}
+
+.cui_dialog_buttons_displayed  {
+  position: relative;
+width: 100%;
+left: 0;
+  }
+
+.cui_dialog_buttons_displayed li {
+float: left;
+margin-right: 3%;
+}
+
+.cui_btn_primary {
+  border-radius: 10px;
+  padding: 5% 8%;
+  color: #e34953;
+  background-color:#f1f1f1; 
+  min-width: 130px;
+}
+
+.cui_btn_secondary {
+color: #fff;
+}
+
+.btn_selected {
+background-color: #F8CA4D;
+color: #5b4e60;
+}
+
+
+.bottom_hero label{
+  color: #fff;
+}
 @keyframes blink_dots {50% { color: transparent;}}
 .cui_loader { font-size: 0px;text-align: center;
 -webkit-transition: all 1s ease-in-out;  
@@ -312,12 +357,10 @@ font-size: 0px;
 -moz-transition:All 1s ease-in-out;
 -o-transition:All 1s ease-in-out;
 }
-.cui_dialog_hide {opacity:0; z-index: -9999; position: absolute;}
+.cui_dialog_hide {opacity:0; z-index: -9999; position: absolute;height: 50%;}
 .cui_dialog_display {opacity:1; position:relative;z-index: 1; 
-height: 45vh;
-
-
-}
+height: 50%;}
+.block-text {max-height: 50%;}
 .cui_dialog_greyed {display:none;opacity:0.4;
 transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
 -webkit-transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
@@ -334,10 +377,7 @@ pointer-events: none;
 cursor: default;
 }
 
-::-webkit-scrollbar {
--webkit-appearance: none;
-width: 7px;
-}
+
 .cui_dialog_meka_sidebar {    min-width: 22%;
 min-height: 10px;
 display: block;
@@ -386,77 +426,7 @@ transform-origin: 50%;
 }
 
 
-.cui_dialog_buttons {
-  display: none;
-margin-left: 1.25rem;
-text-align: left;
-list-style: none;
-    transition:All 1s 5s ease-in-out;
--webkit-transition:All 1s 5s ease-in-out;
--moz-transition:All 1s 5s ease-in-out;
--o-transition:All 1s 5s ease-in-out;
-}
 
-
-.cui_dialog_buttons_displayed{
-  display: block;
-position: relative;
-right: 0;
-font-size: 1em;
-}
-
-
-.cui_dialog_buttons li {
-display: inline-block;
-    margin: 1%;
-}
-.cui_dialog_buttons li a {
-color: #ff7473;
-}
-
-
-.cui_btn_primary {
-font-size: 0;
-background-color:transparent; 
-transition:All 1s 1s ease-in-out;
--webkit-transition:All 1s 1s ease-in-out;
--moz-transition:All 1s 1s ease-in-out;
--o-transition:All 1s 1s ease-in-out;
-}
-
-.cui_dialog_buttons_displayed li a.cui_btn_primary {
-  background-color: #f1f1f1;
-  border-radius: 10px; padding: 0.5em 0.7em;
-font-size:1em;
-}
-
-.cui_btn_secondary {
-transition:All 1s 2s ease-in-out;
--webkit-transition:All 1s 2s ease-in-out;
--moz-transition:All 1s 2s ease-in-out;
--o-transition:All 1s 2s ease-in-out;
-}
-
-.cui_dialog_buttons_displayed a.cui_btn_secondary {
-font-size:0.7em;
-
-}
-
-
-
-
-.cui_first_buttons{
-position: relative;
-right: 0;
-font-size: 1em;
-}
-.cui_first_button1, .cui_first_button2{
-font-size: 1em;
-}
-.btn_selected {
-background-color: #F8CA4D;
-color: #5b4e60;
-}
 
 .cui_article_container {
 background-color: #fff;
@@ -481,7 +451,7 @@ margin-right: 3%;
 }
 
 @media only screen and (min-width:768px){
-.cui_dialog_avatar {width: 100%;height: 100%;margin: 0 auto;}
+.cui_dialog_avatar {width: 100%;height: 100%;margin: 50% auto 0 auto;}
 }
 
 @-webkit-keyframes blink { 
@@ -493,7 +463,6 @@ margin-right: 3%;
 62% { -webkit-transform: scaleX(1) scaleY(1); } 
 100% { -webkit-transform: scaleX(1) scaleY(1); }
 }
-
 
 @keyframes blink { 
 0% { transform: scaleX(1) scaleY(1); } 

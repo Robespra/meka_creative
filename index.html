@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="http://www.thnikingmeka.com/img/logo-social.png">
 <link rel="shortcut icon" href="http://www.thinkingmeka.com/favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name=viewport content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta property="og:locale" content="en_EN" />
 <meta property="og:site_name" content="Meka creative bot" />
 <meta property="og:type" content="website" />
@@ -98,7 +98,7 @@
   </div> 
 </div> 
 </div> <!-- large-3 columns -->
-<div class="small-10 medium-9 columns align-self-middle">
+<div class="small-10 medium-9 columns align-self-middle block-text">
 
 
 <div class="cui_dialog cui_button cui_dialog_display">
@@ -119,16 +119,16 @@
 <li>Which one would you like to start with ? / to test</li>
 </ul>
 </div> <!-- cui_dialog_message -->
-<ul class="cui_after_cta_buttons cui_dialog_buttons">
-<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_art','cui_first_button_art')">Art</a></li>
-<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_design','cui_first_button_design')">Design</a></li>
-<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_business','cui_first_button_business')">Business</a></li>
-<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_sciences','cui_first_button_sciences')">Sciences</a></li>
-<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_programing','cui_first_button_programing')">Programing</a></li>
-<li><a href="" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button1','cui_first_button1')">Cooking</a></li>
+<ul class="cui_dialog_buttons cui_dialog_buttons_hidden">
+<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_art','cui_first_button_art')">Art</a></li>
+<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_design','cui_first_button_design')">Design</a></li>
+<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_business','cui_first_button_business')">Business</a></li>
+<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_sciences','cui_first_button_sciences')">Sciences</a></li>
+<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_programing','cui_first_button_programing')">Programing</a></li>
+<li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button1','cui_first_button1')">Cooking</a></li>
 <li><a href="#cui_first_non" class="cui_btn_secondary cui_first_button2" onclick="track('ui_btn_primary cui_first_button_notsuretellmemore','ui_btn_primary cui_first_button_notsuretellmemore')">Not sure, tell me more about you, first...</a></li>
-</div> <!-- cui_dialog_buttons -->
-
+</ul> <!-- cui_dialog_buttons -->
+</div><!-- cui_dialog cui_after_cta -->
 
 <div class="cui_dialog cui_first_oui cui_dialog_hide">
 <div class="cui_dialog_message">
@@ -138,29 +138,33 @@
 <li>Would you like me to inform you when I am finally ready to run the show?</li> 
 </ul>
   </div> <!-- cui_dialog_message -->
-
-<div class="cui_dialog_buttons">
-  <a href="#cui_second_theorie" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes, please</a><a href="#cui_first_non" class="cui_btn_secondary cui_first_oui_button2" onclick="track('cui_second_noemailtellmemore','cui_second_noemailtellmemore')">No, that’s not necessary, just tell me more about you</a>
-  </div> <!-- cui_dialog_buttons -->
+<ul class="cui_dialog_buttons cui_dialog_buttons_hidden">
+  <li><a href="#cui_second_theorie" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes please</a></li><li><a href="#cui_first_non" class="cui_btn_secondary cui_first_oui_button2" onclick="track('cui_second_noemailtellmemore','cui_second_noemailtellmemore')">No, that’s not necessary, just tell me more about you</a></li>
+  </ul> <!-- cui_dialog_buttons -->
 </div> <!-- cui_first_oui -->
+
+
 
 <div id="cui_first_non" class="cui_dialog cui_first_non cui_dialog_hide">
 <ul class="cui_first_non_message bubble_none message">
 <li>So you want to know more about me...</li>
 <li>Nous vous souhaitons une excellente visite. N'hésitez pas à vous inscrire à notre newsletter!</li>
 </ul>
+<ul class="cui_dialog_buttons cui_dialog_buttons_hidden">
+  <li><a href="#cui_second_theorie" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes, please</a></li>
+  </ul> <!-- cui_dialog_buttons -->
   </div> <!-- cui_dialog_message -->
 
   
 
 <div id="cui_second_theorie" class="cui_dialog cui_second_theorie cui_dialog_hide">
 <ul class="cui_second_theorie_message bubble_none message">
-<li>Ces deux articles sur la théorie de la créativité sont les plus lu.</li> 
-<li>Peut être qu’ils vous intéresseront aussi :</li>
+<li>EMAIL INPUT HERE ! </li> 
+<li>EMAIL INPUT HERE ! </li>
 </ul>
-<div class="cui_dialog_buttons2">
-<a href="#cui_third_all" class="cui_btn_primary cui_second_theorie_button1" onclick="track('cui_second_theorie_button1','cui_second_theorie_button1')">Je les ai déjà lu</a><a href="#cui_third_all" class="cui_btn_secondary cui_second_theorie_button2" onclick="track('cui_second_theorie_button2','cui_second_theorie_button2')">Me faire plus de proposition</a>
-</div> <!-- cui_dialog_buttons -->
+<ul class="cui_dialog_buttons cui_dialog_buttons_hidden">
+<li><a href="#cui_third_all" class="cui_btn_primary cui_second_theorie_button1" onclick="track('cui_second_theorie_button1','cui_second_theorie_button1')">Send !</a></li>
+</ul> <!-- cui_dialog_buttons -->
 </div> <!-- cui_second_theorie -->
 
 <div id="cui_second_pratique" class="cui_dialog cui_second_pratique cui_dialog_hide">
@@ -172,7 +176,6 @@
           <form action="newsletter_sign_up_send.php" method="post" id="newsletter" name="newsletter">
               <input type="email" name="signup-email" id="signup-email" value="" placeholder="Entrez votre email pour vous abonner"/>
               <input type="submit" value="S'inscrire" name="signup-button" id="signup-button" onclick="track('Click-newsletter-log','Click-newsletter-log')">
-              <span class="arrow"></span>
           </form>
           <div id="response"></div>
       </div>
@@ -230,7 +233,7 @@
 
 
 <div class="small-12 columns align-self-bottom">
-<div class="row align-bottom text-center">
+<div class="row align-bottom text-center bottom_hero">
 
     <div class="columns"><a class="item">
     <svg class="icon-svg svgicon-paint-palette"><use xlink:href="symbol-defs.svg#svgicon-paint-palette"></use></svg>
@@ -263,6 +266,7 @@ $(".btn_cta_hero").click(function(e) {
     $(".cui_after_cta").addClass("cui_dialog_display");
     $(".cui_after_cta_message").addClass("bubble_displayed");
     $(".cui_loader").addClass("display_loader");
+    $(".cui_dialog_buttons").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons").addClass("cui_dialog_buttons_displayed");
     $(".svg-logo").addClass("svg-happyfreshlogo_thinking");
     setTimeout(function() {
@@ -272,11 +276,13 @@ $(".btn_cta_hero").click(function(e) {
     });
 
 $(".cui_first_button1").click(function(e) {
+    $(".cui_after_cta").removeClass("cui_dialog_display");
+    $(".cui_after_cta").addClass("cui_dialog_hide");
     $(".cui_first_oui").removeClass("cui_dialog_hide");
     $(".cui_first_oui").addClass("cui_dialog_display");
     $(".cui_first_oui_message").addClass("bubble_displayed");
-    $(".cui_after_cta").addClass("cui_dialog_greyed");
     $(".cui_loader").addClass("display_loader");
+    $(".cui_dialog_buttons").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons").addClass("cui_dialog_buttons_displayed");
     $(".cui_first_button1").addClass("btn_selected");
     $(".svg-logo").addClass("svg-happyfreshlogo_thinking");
@@ -288,11 +294,14 @@ $(".cui_first_button1").click(function(e) {
 
 
     $(".cui_first_button2").click(function(e) {
+    $(".cui_first_oui").removeClass("cui_dialog_display");
+    $(".cui_first_oui").addClass("cui_dialog_hide");
     $(".cui_first_non").removeClass("cui_dialog_hide");
     $(".cui_first_non").addClass("cui_dialog_display");
     $(".cui_first_non_message").addClass("bubble_displayed");
     $(".cui_intro").addClass("cui_dialog_greyed");
     $(".cui_loader").addClass("display_loader");
+    $(".cui_dialog_buttons").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons").addClass("cui_dialog_buttons_displayed");
     $(".cui_first_button2").addClass("btn_selected");
     $(".svg-logo").addClass("svg-happyfreshlogo_thinking");
@@ -441,34 +450,44 @@ $(".cui_first_button1").click(function(e) {
 </section>
 
 <div class="row padding10_both">
+<svg class="icon-svg bg_round">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg>
+
   <div class="row align-center">
     <div class="column small-10 large-5">
     <div class="column align-self-top card">
     <div class="card-section">
-    <img src="assets/img/generic/rectangle-1.jpg">
+    <img src="assets/img/">
   </div>
   <div class="card-section">
-  <h3>Artificial Intelligence</h3>
+  <h3>Smart Artificial Intelligence</h3>
     <p>mēkā converts big data into useful data. We use Machine Learning Algorithms to create comparison statistic models based on the inputs of the most creative profiles.</p>
   </div>
     </div>
       <div class="column align-self-bottom card margin20_top">
       <div class="card-section">
-    <img src="assets/img/generic/rectangle-1.jpg">
+    <img src="assets/img/">
   </div>
   <div class="card-section">
-      <h3>Personality Radar</h3>
+      <h3>Creative Personality Radar</h3>
       <p>Discover what makes you unique. Psychometrics & big data objectively assess your creative potential.</p>
           </div>
     </div>
     </div>
+
+    <svg class="icon-svg bg_round">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg>
+
+
     <div class="column small-10 large-5 align-self-middle">
       <div class="column align-self-middle card">
       <div class="card-section">
-    <img src="assets/img/generic/rectangle-1.jpg">
+    <img src="assets/img/">
   </div>
   <div class="card-section">
-      <h3>Progress plan</h3>
+      <h3>Progress Plan</h3>
       <p>mēkā will provide personalized content & exercises (HINTS??) to boost your creativity based on your assessment results</p>
             </div>
       </div>
@@ -480,8 +499,11 @@ $(".cui_first_button1").click(function(e) {
 
 <div class="row align-center padding10_both">
 <div class="column small-12">
-<h2>"Creativity is an universal innate skill that can now be developed using cutting-edge technologies."</h2>
+<h2>"Creativity is an universal innate skill that can now be trained as any other skill."</h2>
 <p><a data-open="exampleModal1">take a closer look to our statement</a></p>
+<svg class="icon-svg bg_round">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg>
 
 <div class="reveal" id="exampleModal1" data-reveal>
   <h1>Awesome. I Have It.</h1>
@@ -514,7 +536,6 @@ $(".cui_first_button1").click(function(e) {
           <form action="newsletter_sign_up_send.php" method="post" id="newsletter" name="newsletter">
               <input type="email" name="signup-email" id="signup-email" value="" placeholder="Entrez votre email pour vous abonner"/>
               <input type="submit" value="S'inscrire" name="signup-button" id="signup-button" onclick="track('Click-newsletter-log','Click-newsletter-log')">
-              <span class="arrow"></span>
           </form>
           <div id="response"></div>
       </div>
@@ -528,11 +549,19 @@ $(".cui_first_button1").click(function(e) {
 
     </div>
   </div>
+  <svg class="icon-svg bg_round">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg> 
 
  <div class="row align-center padding10_both">
+ <svg class="icon-svg bg_round">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg>
 <div class="small-12 medium-6 medium-pull-6 columns card">
+
+
  <div class="card-section">
-    <img src="assets/img/generic/rectangle-1.jpg">
+    <img src="assets/img/">
   </div>
   <div class="card-section">
       <h3>Spread the word on twitter</h3>
@@ -540,6 +569,10 @@ $(".cui_first_button1").click(function(e) {
             </div>
  </div>
 </div>
+<svg class="icon-svg bg_round">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg>
+
 <footer class="footer">
   <div class="row">
    <div class="small-12 medium-6 medium-pull-6 columns">
@@ -562,7 +595,7 @@ $(".cui_first_button1").click(function(e) {
       <p class="copywrite">Copywrite not copywrite © 2015</p>
     </div>
     <div class="small-12 medium-6 medium-push-6 columns">
-      <p class="logo show-for-small-only"><i class="fi-target"></i> FIGHT CLUB</p> 
+      <p class="logo show-for-small-only">meka</p> 
       <form class="footer-form">
         <div class="row">
           <div class="medium-9 medium-push-3 columns">
