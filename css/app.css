@@ -173,12 +173,7 @@ z-index: 9999;}
   font-weight: 500;background-color:#47b8e0;padding: 1%;}
 .meka_inner {height: 97vh;}
 .cui {width:70%;margin:0 auto;display:block;padding:10% 2%;position:relative;border-radius: 10px;overflow: hidden;}
-.cui_dialog{overflow: hidden;
-  transition:All 1s ease-in-out;
--webkit-transition:All 1s ease-in-out;
--moz-transition:All 1s ease-in-out;
--o-transition:All 1s ease-in-out;
-}
+.cui_dialog{overflow: hidden;    max-height: 350px;}
 .btn_cta_hero{
 	margin-top: 5%;
 	background-color:#ff7473;
@@ -226,7 +221,7 @@ transition:All 1s 5s ease-in-out;
 }
  */
 
-.cui_first_oui_message ul.message li, .cui_first_non_message ul.message li, .cui_second_pratique_message ul.message li, .cui_second_theorie_message ul.message li, .cui_third_all_message ul.message li, .cui_fourth_oui_message ul.message li, .cui_fourth_non_message ul.message li {
+.cui_first_oui_message ul.message li, .cui_first_non_message ul.message li, .cui_second_pratique_message ul.message li, .cui_second_email_message ul.message li, .cui_third_all_message ul.message li, .cui_fourth_oui_message ul.message li, .cui_fourth_non_message ul.message li {
 font-size: 12px;
 padding: 3%;
 border-radius: 10px;background-color:#fff;color:#fff;
@@ -282,14 +277,14 @@ height: auto;
 width: 100%;
 }
 
-.cui_dialog_buttons{
+.cui_dialog_buttons_after_cta, .cui_dialog_buttons_first_oui, .cui_dialog_buttons_first_non, .cui_dialog_buttons_second_email{
   width: 0;
   min-height:200px;
   float: left;
+  margin-top: 2%;
   margin-left: 1.25rem;
   text-align: left;
 list-style: none;
-  position: absolute;
   left: -1600px;
 transition:All 1s 3s ease-in-out;
 -webkit-transition:All 1s 3s ease-in-out;
@@ -297,23 +292,28 @@ transition:All 1s 3s ease-in-out;
 -o-transition:All 1s 3s ease-in-out;
 }
 
+.cui_dialog_buttons_hidden  {
+position: absolute;
+  left: -1600px;
+  }
+
 .cui_dialog_buttons_displayed  {
   position: relative;
 width: 100%;
 left: 0;
+list-style: none;
   }
 
 .cui_dialog_buttons_displayed li {
 float: left;
-margin-right: 3%;
+margin: 1% 3% 1% 0;
 }
 
 .cui_btn_primary {
   border-radius: 10px;
-  padding: 5% 8%;
+  padding: 10px;
   color: #e34953;
   background-color:#f1f1f1; 
-  min-width: 130px;
 }
 
 .cui_btn_secondary {
@@ -325,6 +325,19 @@ background-color: #F8CA4D;
 color: #5b4e60;
 }
 
+.cui_second_email_message input {
+    display: block;
+    border: none;
+    outline: none;
+    color:#ff7473;
+}
+
+.cui_second_email_message input:focus{border:2px solid #fff;}
+.cui_dialog_buttons input[type="submit"]{border-radius: 10px;border: none;outline: none;
+  padding: 10px;
+  color: #e34953;
+  background-color:#f1f1f1; }
+.cui_dialog_buttons input[type="submit"]:hover{opacity:0.7;cursor:pointer;}
 
 .bottom_hero label{
   color: #fff;
@@ -577,5 +590,31 @@ Single-colored icons can be modified like so:
   width: 3.5em; height: 3.5em;
 }
 
+.bg_round, .bg_square_round, .bg_triangle, .bg_triangle_round {
+      width: 500px;
+    z-index: -1;
+    height: 500px;
+    position: absolute;
+    margin-left: 30%;
+}
+.index_twitter_bg_setup{
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 15%;
+}
+.index_twitter_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+  transform: skewY(-5deg);
+  transform-origin: top left;
+  z-index: -9999;
+}
 
 
