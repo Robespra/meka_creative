@@ -167,7 +167,7 @@ z-index: 9999;}
 .logo-top{display:block;width:150px;padding: 5%;z-index:9998;position:relative;height:auto;-webkit-transition:opacity;-webkit-transition-timing-function:ease-out;-webkit-transition-duration:500ms;}
 .logo-top:hover{opacity:0.5;filter:alpha(opacity=50);}
 .meka {font-family: 'Quicksand', sans-serif;
-  font-weight: 500;background-color:#47b8e0;padding: 1%;}
+  font-weight: 500;background-color:#1E81ED;padding: 1%;}
 .meka_inner {height: 97vh;}
 .cui_dialog{overflow: hidden;max-height: 450px;}
 .btn_cta_hero{
@@ -198,6 +198,7 @@ height: auto;
 padding: 3%;
 width: 100%;
 background-color:#ff7473;
+opacity: 0.8;
 border-radius: 10px;
 }
 li.nwslttr {overflow:hidden;}
@@ -272,6 +273,8 @@ left: 0;
 height: auto;
 width: 100%;
 }
+
+
 
 .cui_dialog_buttons_after_cta, .cui_dialog_buttons_first_oui, .cui_dialog_buttons_first_non, .cui_dialog_buttons_second_email{
   width: 0;
@@ -398,12 +401,19 @@ min-height: 10px;
 display: block;
 float: left;
 position: relative;}
+
+.meka_bg_zindex {
+  display: block;
+  width: 600px;
+  height: auto;
+  position: absolute;
+}
+
+
 .cui_dialog_avatar {
-      max-width: 180px;
-    max-height: 180px;
     width: 100%;
     height: 100%;
-    padding-top: 30%;
+    padding-top: 3%;
     margin: 0 auto;
 transition:All 1s ease-in-out;
 -webkit-transition:All 1s ease-in-out;
