@@ -619,6 +619,17 @@ Single-colored icons can be modified like so:
     right: -30%;
     top: 24%;
 }
+.bg_triangle2 {
+      transform: skewX(-32deg);
+    width: 700px;
+    z-index: -1;
+    height: 700px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -11%;
+      
+}
+    
 
 .bg_square_round1 {
     width: 650px;
@@ -645,14 +656,20 @@ Single-colored icons can be modified like so:
     height: 250px;
     right: 10%;
 }
-
+.landing_box_shadow{
+  box-shadow: 0px 0px 100px #d2d2d2;
+}
 .landing_quote {
   font-size: 5rem;
+}
+.social_twitter{
+  width: 8em;
+  height: 8em;
 }
 .index_twitter_bg_setup{
   position: relative;
   height: 350px;
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 15%;
 }
 .index_twitter_bg {
@@ -664,7 +681,7 @@ Single-colored icons can be modified like so:
   width: 100%;
   height: 100%;
   background-color: #47b8e0;
-  transform: skewY(-5deg);
+  transform: skewY(-3deg);
   transform-origin: top left;
   z-index: -9999;
 }
