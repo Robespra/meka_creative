@@ -38,7 +38,7 @@
   <div class="column small-12">
   <div class="logo_header">
   <h1 class="hidden-h1">meka creative bot</h1>
-  <a href="http://www.elhacedor.soy/" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical">
+  <a href="http://www.thinkingmeka.me" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical">
   <svg class="icon-svg svgicon-meka_logo_app">
   <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app"></use>
 </svg>
@@ -102,7 +102,11 @@
 
 
 <div class="cui_dialog cui_button cui_dialog_display">
-<h2 class="h2_hero">Test and Improve your Creativity, for Free</h2>
+<ul class="cui_after_cta_message bubble_displayed message">
+<li>Hi there ! My name is mēkā, your creative advisor. </li>
+<li>Test and Improve your Creativity, for free.</li>
+<li>Please click on start and let's chat!</li>
+</ul>
   <div class="row align-center">
     <div class="large-6 columns">
     <a class="button large btn_cta_hero" href="#">Start</a>
@@ -114,8 +118,7 @@
 <div class="cui_dialog cui_after_cta cui_dialog_hide">
 <div class="cui_dialog_message">
 <ul class="cui_after_cta_message bubble_none message">
-<li>Hi there ! My name is mēkā, your creative advisor. </li>
-<li>I can help you test and enhance your creativity in specific domains.</li>
+<li>I can help you test and enhance your creativity in the folowing specific domains.</li>
 <li>Which one would you like to start with ? / to test</li>
 </ul>
 </div> <!-- cui_dialog_message -->
@@ -146,16 +149,20 @@
 
 
 <div class="cui_dialog cui_second_email cui_dialog_hide">
-<ul class="cui_second_email_message bubble_none message">
+<ul class="cui_second_email_message bubble_none message" id="newsletterform">
 <li>Cool !</li> 
 <li>Join our early access list to get notified when I am ready. No spam, no fuss.</li> 
-<li><input type="email" name="signup-email" id="signup-email" value placeholder="email@email.com" autofocus/> </li>
+<form action="newsletter_sign_up_send.php" method="post" id="newsletter" name="newsletter">
+<li class="nwslttr"><input type="email" name="signup-email" id="signup-email" value="" placeholder="email@email.com" autofocus/> </li>
+<li class="nwslttr_loading" id="response"></li>
 </ul>
 <ul class="cui_dialog_buttons cui_dialog_buttons_second_email  cui_dialog_buttons_hidden">
 <li>
-<input type="submit" value="Notify me" name="signup-button" id="signup-button" onclick="track('Click-newsletter-log','Click-newsletter-log')"></li>
+<input type="submit" value="Notify me" name="signup-button" id="signup-button" class="cui_email_submit" onclick="track('Click-newsletter-log','Click-newsletter-log')"></li>
 </ul> <!-- cui_dialog_buttons -->
+</form>
 </div> <!-- cui_second_theorie -->
+
 
 
 <div class="cui_dialog cui_first_non cui_dialog_hide">
@@ -170,6 +177,9 @@
   </div> <!-- cui_dialog_message -->
 
   
+
+
+
 
 </div> <!-- cui_fourth_non -->
 
@@ -245,7 +255,6 @@ $(".cui_first_button1").click(function(e) {
     $(".cui_first_non").removeClass("cui_dialog_hide");
     $(".cui_first_non").addClass("cui_dialog_display");
     $(".cui_first_non_message").addClass("bubble_displayed");
-    $(".cui_intro").addClass("cui_dialog_greyed");
     $(".cui_loader").addClass("display_loader");
     $(".cui_dialog_buttons_first_non").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons_first_non").addClass("cui_dialog_buttons_displayed");
@@ -262,7 +271,6 @@ $(".cui_first_button1").click(function(e) {
     $(".cui_first_non").removeClass("cui_dialog_hide");
     $(".cui_first_non").addClass("cui_dialog_display");
     $(".cui_first_non_message").addClass("bubble_displayed");
-    $(".cui_intro").addClass("cui_dialog_greyed");
     $(".cui_loader").addClass("display_loader");
     $(".cui_dialog_buttons_first_non").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons_first_non").addClass("cui_dialog_buttons_displayed");
@@ -275,10 +283,11 @@ $(".cui_first_button1").click(function(e) {
 
 
     $(".cui_first_oui_button1").click(function(e) {
+    $(".cui_first_oui").removeClass("cui_dialog_display");
+    $(".cui_first_oui").addClass("cui_dialog_hide");
     $(".cui_second_email").removeClass("cui_dialog_hide");
     $(".cui_second_email").addClass("cui_dialog_display");
     $(".cui_second_email_message").addClass("bubble_displayed");
-    $(".cui_first_oui").addClass("cui_dialog_greyed");
     $(".cui_loader").addClass("display_loader");
     $(".cui_dialog_buttons").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons").addClass("cui_dialog_buttons_displayed");
@@ -312,8 +321,6 @@ $(".cui_first_button1").click(function(e) {
     $(".cui_button").addClass("cui_dialog_hide");
     $(".cui_after_cta").removeClass("cui_dialog_display");
     $(".cui_after_cta").addClass("cui_dialog_hide");
-    $(".cui_first_oui").removeClass("cui_dialog_display");
-    $(".cui_first_oui").addClass("cui_dialog_hide");
     $(".cui_second_email").removeClass("cui_dialog_display");
     $(".cui_second_email").addClass("cui_dialog_hide");
     $(".cui_first_non").removeClass("cui_dialog_display");
@@ -331,70 +338,27 @@ $(".cui_first_button1").click(function(e) {
        $(".svg-logo").removeClass("svg-happyfreshlogo_thinking");
    }, 2000);
     });
+    
 </script> 
 </div> <!-- cui -->
 </section>
 
-<div class="row padding10_both">
-<svg class="icon-svg bg_triangle_round">
+<div class="row padding10_both svg_container">
+<svg class="icon-svg bg_triangle_round1">
   <use xlink:href="symbol-defs.svg#bg_triangle_round"></use>
 </svg>
-
-  <div class="row align-center">
-    <div class="column small-10 large-5">
-    <div class="column align-self-top card">
-    <div class="card-section">
-    <img src="assets/img/">
-  </div>
-  <div class="card-section">
-  <h3>Smart Artificial Intelligence</h3>
-    <p>mēkā converts big data into useful data. We use Machine Learning Algorithms to create comparison statistic models based on the inputs of the most creative profiles.</p>
-  </div>
-    </div>
-      <div class="column align-self-bottom card margin20_top">
-      <div class="card-section">
-    <img src="assets/img/">
-  </div>
-  <div class="card-section">
-      <h3>Creative Personality Radar</h3>
-      <p>Discover what makes you unique. Psychometrics & big data objectively assess your creative potential.</p>
-          </div>
-    </div>
-    </div>
-
-    <svg class="icon-svg bg_triangle">
-  <use xlink:href="symbol-defs.svg#bg_triangle"></use>
-</svg>
-
-
-    <div class="column small-10 large-5 align-self-middle">
-      <div class="column align-self-middle card">
-      <div class="card-section">
-    <img src="assets/img/">
-  </div>
-  <div class="card-section">
-      <h3>Progress Plan</h3>
-      <p>mēkā will provide personalized content & exercises (HINTS??) to boost your creativity based on your assessment results</p>
-            </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
 <div class="row align-center padding10_both">
 <div class="column small-12">
-<h2>"Creativity is an universal innate skill that can now be trained as any other skill."</h2>
-<p><a data-open="exampleModal1">take a closer look to our statement</a></p>
-<svg class="icon-svg bg_round">
+<h2 class="landing_quote">Creativity is an universal innate skill that can now be trained as any other skill</h2>
+<h4><a data-open="exampleModal1">take a closer look to our statement</a></h4>
+<svg class="icon-svg bg_round1">
   <use xlink:href="symbol-defs.svg#bg_round"></use>
 </svg>
 
 <div class="reveal" id="exampleModal1" data-reveal>
   <h1>Awesome. I Have It.</h1>
   <p class="lead">Your couch. It is mine.</p>
-  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <p>Below are a few examples of products that sound human and conversational, like a friend who’s chatting with you. HUMAN drivenI'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -404,13 +368,85 @@ $(".cui_first_button1").click(function(e) {
 
 </div>
 </div> <!-- row -->
+  <div class="row align-center">
+    <div class="column small-10 large-5">
+    <div class="column align-self-top card">
+    <div class="card-section">
+    <img src="assets/img/">
+  </div>
+  <div class="card-section">
+  <h3>Human Driven Artificial Intelligence</h3>
+    <p>mēkā converts big data into useful data. We use Machine Learning Algorithms to create comparison statistic models based on the inputs of the most creative profiles in their specific domains. Human + AI = smart AI.</p>
+  </div>
+    </div>
+        <svg class="icon-svg bg_triangle1">
+  <use xlink:href="symbol-defs.svg#bg_triangle"></use>
+</svg>
+      <div class="column align-self-bottom card margin20_top">
+      <div class="card-section">
+    <img src="assets/img/">
+  </div>
+  <div class="card-section">
+      <h3>Creative Personality Radar</h3>
+      <p>Discover what makes you unique. Psychometrics & big data objectively assess your creative potential.</p>
+          </div>
+    </div>
+    
+    </div>
+
+
+
+
+    <div class="column small-10 large-5 align-self-middle">
+
+      <div class="column align-self-middle card">
+      <div class="card-section">
+    <img src="assets/img/">
+  </div>
+  <div class="card-section">
+      <h3>Progress Plan</h3>
+      <p>mēkā will provide personalized content & hints to boost your creativity based on your experience with the tool</p>
+            </div>
+      </div>
+      <svg class="icon-svg bg_triangle_round">
+  <use xlink:href="symbol-defs.svg#bg_triangle_round"></use>
+</svg>
+    </div>
+
+  </div>
+
+</div>
+
+<svg class="icon-svg bg_square_round1">
+  <use xlink:href="symbol-defs.svg#bg_square_round"></use>
+</svg> 
+
 
 
 <div class="row align-center padding10_both">
-    <div class="column small-8 card">
-    MEKA PRO
-
+    <div class="column small-12">
+    <h6>EASE YOUR CREATIVE SELECTION WITH MĒKĀ PRO</h6>
+    <quote class="padding10_both landing_quote text-left">“Creativity and problem-solving are becoming the key to success in the new market world” Trowbridge</quote>
+     <div class="row">
+     <div class="column small-12 medium-3">
+    <h6>EASE YOUR CREATIVE SELECTION WITH MĒKĀ PRO</h6>
+    </div>
+    <div class="column small-12 medium-9">
+    <ul>
+    <li>be creative with creativity : setup creative profiles for various areas including multi-disciplinary profiles</li>
+    <li>save time using the appraisal tool</li>
+    <li>merge “in-demand” skills along with technical/specialist skills</li>
+    <li>keep your profiles and canditates in one place</li>
+    <li>HR Consulting : offer your client the option to create their own profile</li>
+    </ul>
     <p><a data-open="exampleModal2">Read more...</a></p>
+    </div>
+
+<svg class="icon-svg bg_round2">
+  <use xlink:href="symbol-defs.svg#bg_round"></use>
+</svg>
+</div>
+    
 
 <div class="reveal" id="exampleModal2" data-reveal>
   <h1>Awesome. I Have Itttt MEKA PRO.</h1>
@@ -418,7 +454,7 @@ $(".cui_first_button1").click(function(e) {
   <div id="newsletterform">
       <div class="wrap">
           <h3>Découvrez et améliorez votre créativité.</h3>
-          <p class=small>Recevez chaque samedi matin<bold> 5 articles sur la créativité sélectionnés par nos soins parmi toutes les publications en ligne.</bold> Service gratuit. Vous êtez libre de vous désinscrire lorsque vous le souhaitez. <a href="http://www.elhacedor.soy/newsletter_template/index.html" target="_blank" style="text-decoration:underline" onclick="track('Click-newsletter-log-exemple','Click-newsletter-log-exemple')">Voir un exemple</a></p>
+          <p class=small>Below are a few examples of products that sound human and conversational, like a friend who’s chatting with you. Recevez chaque samedi matin<bold> 5 articles sur la créativité sélectionnés par nos soins parmi toutes les publications en ligne.</bold> Service gratuit. Vous êtez libre de vous désinscrire lorsque vous le souhaitez. Tell us a bit about yourself.<a href="http://www.elhacedor.soy/newsletter_template/index.html" target="_blank" style="text-decoration:underline" onclick="track('Click-newsletter-log-exemple','Click-newsletter-log-exemple')">Voir un exemple</a></p>
           <form action="newsletter_sign_up_send.php" method="post" id="newsletter" name="newsletter">
               <input type="email" name="signup-email" id="signup-email" value="" placeholder="Entrez votre email pour vous abonner"/>
               <input type="submit" value="S'inscrire" name="signup-button" id="signup-button" onclick="track('Click-newsletter-log','Click-newsletter-log')">
@@ -435,34 +471,27 @@ $(".cui_first_button1").click(function(e) {
 
     </div>
   </div>
-  <svg class="icon-svg bg_square_round">
-  <use xlink:href="symbol-defs.svg#bg_square_round"></use>
+  <svg class="icon-svg bg_triangle">
+  <use xlink:href="symbol-defs.svg#bg_triangle"></use>
 </svg> 
    <div class="index_twitter_bg_setup">
  <div class="row align-center padding10_both">
   <div class="index_twitter_bg"></div>
 
- <svg class="icon-svg bg_triangle_round">
-  <use xlink:href="symbol-defs.svg#bg_triangle_round"></use>
-</svg>
+ 
 <div class="small-12 medium-6 medium-pull-6 columns card">
-
-
-
- <div class="card-section">
-    <img src="assets/img/">
-  </div>
   <div class="card-section">
       <h3>Spread the word on twitter</h3>
-      <p>Spread the word on twitter</p>
+      <p>We are just kicking off this project, and we really love what we do. Please help us by sharing this page on twitter.</p>
+  </div>
+ <div class="card-section">
+    <img src="assets/img/">
   </div>
   </div>
     </div>
 </div>
 
-<svg class="icon-svg bg_round">
-  <use xlink:href="symbol-defs.svg#bg_round"></use>
-</svg>
+
 
 <footer class="footer">
   <div class="row">
@@ -470,11 +499,11 @@ $(".cui_first_button1").click(function(e) {
       <p class="logo hide-for-small-only">meka</p> 
       <p class="footer-links">
         <a href="#">Home</a>
-        <a href="#">MENTIONS LEGALES</a>
+        <a href="#">MENTIONS LEGALES??</a>
         <a href="#">blog</a>
         <a href="#">About</a>
         <a href="#">Faq</a>
-        <a href="#">Newsletter</a>
+        <a href="#">Newsletter (link to new page)</a>
         <a href="#">Contact</a>
       </p>
       <ul class="inline-list social">
@@ -483,29 +512,11 @@ $(".cui_first_button1").click(function(e) {
         <a href="#"><i class="fi-social-linkedin"></i></a>
         <a href="#"><i class="fi-social-github"></i></a>
       </ul>
-      <p class="copywrite">Copywrite not copywrite © 2015</p>
+      <p class="copywrite">uxpages ©2017</p>
     </div>
   </div>
 </footer>
-    <script>
-      var   menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-        showRightPush = document.getElementById( 'showRight' ),
-        body = document.body;
     
-      showRight.onclick = function() {
-        classie.toggle( this, 'active' );
-        classie.toggle( menuRight, 'cbp-spmenu-open' );
-        $('#s').trigger('focus')
-      };
-$('#showRight').click(function() {
-        if($('#showRight').hasClass('closed')) {
-            $(this).removeClass('closed').addClass('open').html('<div class="search_close">FERMER<div/>');
-            $('#fade').fadeIn(); }
-        else if($('#showRight').hasClass('open')) {
-            $(this).removeClass('open').addClass('closed').html('<img src="images/search.svg"/>');
-            $('#fade').fadeOut(); }
-    });
-    </script> 
 <script> 
     $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -529,5 +540,6 @@ $('#showRight').click(function() {
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/newsletter_sign_up_lib.js"></script>
   </body>
 </html>
