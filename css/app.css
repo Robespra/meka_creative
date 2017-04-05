@@ -106,6 +106,7 @@ h6 {
     line-height: 2rem;
     margin: 0 3px 0 0; }
   .footer .copywrite {
+    color: #fff;
     font-size: 0.875rem;
     margin: 1rem 0 1rem 0; }
   .footer .footer-form textarea, .footer .footer-form input {
@@ -479,6 +480,21 @@ animation-duration: 10s;
 animation-iteration-count: infinite; 
 transform-origin: 50%;
 }
+
+.svg-happyfreshlogo {
+-webkit-animation-name: move_up_down;
+-webkit-animation-duration: 20s;
+-webkit-animation-iteration-count: infinite; 
+-webkit-transform-origin: 50%;
+animation-name: move_up_down;
+animation-duration: 20s;
+animation-iteration-count: infinite; 
+transform-origin: 50%;
+animation-delay: 18s;
+}
+
+
+
 .svg-happyfreshlogo_thinking .mouth {
 -webkit-animation-name: thinking;
 -webkit-animation-duration: 2s;
@@ -560,6 +576,75 @@ margin-right: 3%;
 50% { transform: scaleX(0.5) scaleY(0.5) skewX(-30deg) skewY(30deg) ; } 
 100% { transform: scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;  }
 }
+
+
+
+@-webkit-keyframes move_up_down { 
+0% {
+-webkit-transform: translateY(0%);
+}
+20% {
+-webkit-transform:  translateY(-3%);
+}
+30% {
+-webkit-transform:  translateY(0%);
+}
+80% {
+-webkit-transform:  translateY(0%);
+}
+83% {
+-webkit-transform:  translateY(3%);
+}
+85% {
+-webkit-transform:  translateY(0%);
+}
+90% {
+-webkit-transform:  translateY(0%);
+}
+92% {
+-webkit-transform:  translateY(0%);
+}
+95% {
+-webkit-transform:  translateY(0%);
+}
+100% {
+-webkit-transform:  translateY(0%);
+}
+}
+
+@keyframes move_up_down { 
+0% {
+transform: translateY(0%);
+}
+20% {
+transform:  translateY(-3%);
+}
+30% {
+transform:  translateY(0%);
+}
+80% {
+transform:  translateY(0%);
+}
+83% {
+transform:  translateY(3%);
+}
+85% {
+transform:  translateY(0%);
+}
+90% {
+transform:  translateY(0%);
+}
+92% {
+transform:  translateY(0%);
+}
+95% {
+transform:  translateY(0%);
+}
+100% {
+transform:  translateY(0%);
+}
+}
+
 
 @keyframes rotate{
 0% {
@@ -715,6 +800,8 @@ Single-colored icons can be modified like so:
 .landing_perso_radar, .landing_perso_progress, .landing_ai {
   width: 7em;
   height: 7em;
+  background: #e34953;
+  border-radius: 50%;
 }
 
 
@@ -733,6 +820,17 @@ Single-colored icons can be modified like so:
 .landing_quote {
   font-size: 5rem;
 }
+
+.pattern_blue_bg{
+  width: 50em;
+  height: 50em;
+  z-index: -9999;
+  position: absolute;
+  margin-top: 17%;
+  right: 5%;
+  opacity: 0.5;
+}
+
 .social_twitter{
   width: 8em;
   height: 8em;
