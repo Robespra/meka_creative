@@ -9,6 +9,9 @@ h6 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
 }
+.red_h {
+  color:#e34953
+}
 .padding10_both {
 	padding: 10% 0;
 }
@@ -168,7 +171,7 @@ z-index: 9999;}
 .meka {font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   background-color:#1E81ED;padding: 1%;}
-.meka_inner {height: 97vh;}
+.meka_inner {height: 93vh;}
 .cui_dialog{overflow: hidden;max-height: 450px;}
 .btn_cta_hero{
 	margin-top: 5%;
@@ -188,6 +191,7 @@ list-style: none;
 }
 
 ul.message li{
+  overflow: hidden;
 font-size: 1em;
 line-height: 1.3em;
 color:#fff;
@@ -261,8 +265,44 @@ transition:All 1s 2.3s ease-in-out;
 -o-transition:All 1s 2.3s ease-in-out;
 }
 
+.bubble_none li:nth-child(4) {
+  width: 0;
+  left: -1600px;
+transition:All 1s 2.6s ease-in-out;
+-webkit-transition:All 1s 2.6s ease-in-out;
+-moz-transition:All 1s 2.6s ease-in-out;
+-o-transition:All 1s 2.6s ease-in-out;
+}
 
-.bubble_displayed li:first-child, .bubble_displayed li:nth-child(2), .bubble_displayed li:nth-child(3) {
+.bubble_none li:nth-child(5) {
+  width: 0;
+  left: -1600px;
+transition:All 1s 2.9s ease-in-out;
+-webkit-transition:All 1s 2.9s ease-in-out;
+-moz-transition:All 1s 2.9s ease-in-out;
+-o-transition:All 1s 2.9s ease-in-out;
+}
+
+.bubble_none li:nth-child(6) {
+  width: 0;
+  left: -1600px;
+transition:All 1s 3.1s ease-in-out;
+-webkit-transition:All 1s 3.1s ease-in-out;
+-moz-transition:All 1s 3.1s ease-in-out;
+-o-transition:All 1s 3.1s ease-in-out;
+}
+
+.bubble_none li:nth-child(7) {
+  width: 0;
+  left: -1600px;
+transition:All 1s 3.4s ease-in-out;
+-webkit-transition:All 1s 3.4s ease-in-out;
+-moz-transition:All 1s 3.4s ease-in-out;
+-o-transition:All 1s 3.4s ease-in-out;
+}
+
+
+.bubble_displayed li:first-child, .bubble_displayed li:nth-child(2), .bubble_displayed li:nth-child(3), .bubble_displayed li:nth-child(4), .bubble_displayed li:nth-child(5), .bubble_displayed li:nth-child(6), .bubble_displayed li:nth-child(7) {
 width: 100%;
 left: 0;
 	}
@@ -344,7 +384,11 @@ color: #5b4e60;
   color: #fff;
 }
 @keyframes blink_dots {50% { color: transparent;}}
-.cui_loader { font-size: 0px;text-align: center;
+.cui_loader { font-size: 300px;opacity: 0;
+    position: absolute;
+    right: -40%;
+    top: 0;
+  text-align: center;
 -webkit-transition: all 1s ease-in-out;  
 -moz-transition: all 1s ease-in-out;  
 -o-transition: all 1s  ease-in-out;  
@@ -356,10 +400,10 @@ transition: all 1s ease-in-out;
 .cui_loader__dot:nth-child(3) { animation-delay: 500ms }
 
 .display_loader{
-font-size: 30px;
+opacity: 1;
 }
 .remove_loader {
-font-size: 0px;
+opacity: 0;
 }
 .bubble-wrap.fade-in {
 @include animation(scaleIn 0.4s ease-in-out);
@@ -407,13 +451,13 @@ position: relative;}
   width: 600px;
   height: auto;
   position: absolute;
-  left: 6%;
+  left: 10%;
 }
 
 
 .cui_dialog_avatar {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     padding-top: 3%;
     margin: 0 auto;
 transition:All 1s ease-in-out;
@@ -667,6 +711,13 @@ Single-colored icons can be modified like so:
     height: 250px;
     right: 10%;
 }
+
+.landing_perso_radar, .landing_perso_progress, .landing_ai {
+  width: 7em;
+  height: 7em;
+}
+
+
 .landing_box_shadow{
   box-shadow: 0px 0px 100px #d2d2d2;
 }

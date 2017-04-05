@@ -4,7 +4,8 @@ $(document).ready(function () {
             $response = $('#response'),
             $mail     = $('#signup-email'),
             testmail  = /^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/,
-            hasError  = false;
+            hasError  = false,
+            $btn = $('#signup-button');
 
         $response.find('p').remove();
 
@@ -26,7 +27,9 @@ $(document).ready(function () {
                 data: $this.serialize()
             }).done(function (data) {
                 $response.removeClass('nwslttr_loading');
+                $btn.addClass('cui_dialog_greyed');
                 $response.html('<p>'+data.message+'</p>');
+
             }).fail(function() {
                 $response.removeClass('nwslttr_loading');
                 $response.html('<p>error, please try again</p>');
