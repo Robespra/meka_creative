@@ -809,14 +809,14 @@ textarea {
   height: 2.4375rem;
   margin: 0 0 1rem;
   padding: 0.5rem;
-  border: 1px solid #cacaca;
-  border-radius: 3px;
-  background-color: #fefefe;
+  border: 1px solid #f1f1f1;
+  border-radius: 30px;
+  background-color: transparent;
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-  font-family: inherit;
   font-size: 1rem;
-  font-weight: normal;
-  color: #5b4e60;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -824,10 +824,10 @@ textarea {
   [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
   textarea:focus {
     outline: none;
-    border: 1px solid #8a8a8a;
-    background-color: #fefefe;
-    box-shadow: 0 0 5px #cacaca;
-    transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    box-shadow: none;
+    transition: border 0.5s, border 0.25s ease-in-out; }
 
 textarea {
   max-width: 100%; }
@@ -1169,6 +1169,8 @@ select {
   text-align: center;
   cursor: pointer;
   background-color: #e34953;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   color: #fefefe; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
@@ -1188,16 +1190,16 @@ select {
     margin-left: 0; }
   .button.primary {
     background-color: #e34953;
-    color: #5b4e60; }
+    color: #fffff; }
     .button.primary:hover, .button.primary:focus {
       background-color: #d0202b;
-      color: #5b4e60; }
+      color: #fffff; }
   .button.secondary {
     background-color: #479DEA;
-    color: #5b4e60; }
+    color: #fffff; }
     .button.secondary:hover, .button.secondary:focus {
       background-color: #229eca;
-      color: #5b4e60; }
+      color: #fffff; }
   .button.alert {
     background-color: #c60f13;
     color: #fefefe; }
@@ -3270,6 +3272,7 @@ a.thumbnail {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   min-width: initial; }
+  
 
 .column.row.row, .row.row.columns {
   display: -ms-flexbox;

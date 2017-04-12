@@ -12,7 +12,7 @@ class Newsletter
 
     public static function register($email) {
         if (!empty($_POST)) {
-            self::$email    = $_POST['signup-email'];
+            self::$email    = $_POST['signup-email_pro'];
             self::$datetime = date('Y-m-d H:i:s');
 
             if (empty(self::$email)) {
@@ -28,12 +28,12 @@ class Newsletter
             if (self::$valid) {
                 $pdo = Database::connect();
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $existingSignup = $pdo->prepare("SELECT COUNT(*) FROM signups WHERE signup_email_address='$email'");
+                $existingSignup = $pdo->prepare("SELECT COUNT(*) FROM signups_pro WHERE signup_email_address='$email'");
                 $existingSignup->execute();
                 $data_exists = ($existingSignup->fetchColumn() > 0) ? true : false;
 
                 if (!$data_exists) {
-                    $sql = "INSERT INTO signups (signup_email_address, signup_date) VALUES (:email, :datetime)";
+                    $sql = "INSERT INTO signups_pro (signup_email_address, signup_date) VALUES (:email, :datetime)";
                     $q = $pdo->prepare($sql);
 
                     $q->execute(
@@ -41,7 +41,7 @@ class Newsletter
 
                     if ($q) {
                         $status  = "success";
-                        $message = "Annnnnnd I have added your email address to the early access list. Thank you! Hang tight, I'll let you in soon.";
+                        $message = "I have added your email address to the early access list. Thank you! Hang tight, I'll let you in soon.";
                         
                     } else {
                         $status  = "error";

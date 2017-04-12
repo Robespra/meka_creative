@@ -33,7 +33,7 @@
   <body>
 <div class="meka">
   <div class="row align-center meka_inner">
-  <div class="column small-11">
+  <div class="column small-12">
   <div class="logo_header">
   <h1 class="hidden-h1">meka creative</h1>
   <a href="http://www.thinkingmeka.me" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical">
@@ -49,6 +49,23 @@
 <section>
 <div class="cui">
   <div id="cui_dialog_avatar"  class="cui_dialog_avatar">
+  <div class="confetti_container confetti_container_hidden">
+  <svg viewBox="0 0 1000 1000">
+  <circle class="confetti" r="30" cy="-50" cx="900" style="transform-origin: 900px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="800" style="transform-origin: 800px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="700" style="transform-origin: 700px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="600" style="transform-origin: 600px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="500" style="transform-origin: 500px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="400" style="transform-origin: 400px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="300" style="transform-origin: 300px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="200" style="transform-origin: 200px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="100" style="transform-origin: 100px -50px"></circle>
+  <circle class="confetti" r="30" cy="-50" cx="0" style="transform-origin: 0px -50px"></circle>
+</svg>
+</div>
+
+
+
     <div class="svg-logo">
 <svg class="svg-happyfreshlogo" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -94,13 +111,13 @@
   </div> 
 </div> 
 </div>
-<div class="small-11 medium-3"></div>
-<div class="small-11 medium-7 columns align-self-middle block-text">
+<div class="small-12 medium-3"></div>
+<div class="small-12 medium-7 columns align-self-middle block-text">
 
 <div class="cui_dialog cui_button cui_dialog_display">
 <ul class="cui_after_cta_message bubble_displayed message">
 <li>Hi there ! My name is mēkā, your creative advisor. </li>
-<li>Test and Improve your Creativity, for free.</li>
+<li>Instantly unlock your Creativity, for free.</li>
 <li>Please click on start and let's chat!</li>
 </ul>
   <div class="row">
@@ -148,7 +165,7 @@
 <ul class="cui_second_email_message bubble_none message" id="newsletterform">
 <form action="newsletter_sign_up_send.php" method="post" id="newsletter" name="newsletter">
 <li>Cool !</li> 
-<li>Join our early access list to get notified when I am ready. No spam, no fuss.</li> 
+<li>Join our early access list to get notified when I am ready. No spam, no fuss. Uninscribe anytime.</li> 
 <li><input type="email" name="signup-email" id="signup-email" value="" placeholder="email@email.com" autofocus/> </li>
 <li class="nwslttr_loading" id="response"></li>
 </ul>
@@ -163,19 +180,20 @@
 
 <div class="cui_dialog cui_first_non cui_dialog_hide">
 <ul class="cui_first_non_message bubble_none message">
-<li>So you want to know more about me...</li>
-<li>CREATIVITY STATEMENT</li>
-<li>CREATIVITY STATEMENT</li>
-<li>CREATIVITY STATEMENT</li>
-<li>CREATIVITY STATEMENT</li>
-<li>Interested in early access? </li>
+<li>So you want to know more about me... It's quite simple : </li>
+<li>I believe that creativity is a set of skills, dispositions and capacities that can be developed</li>
+<li>So I am using my artificial intelligence to help you train and develop them</li>
+<li>Together we will run domain-specific tests and I will provide exercices based on our work</li>
+<li>I can't wait to start, actually !</li>
+<li>But...</li>
+<li>...I am not ready yet... Interested in early access? </li>
 </ul>
 <ul class="cui_dialog_buttons cui_dialog_buttons_first_non cui_dialog_buttons_hidden">
   <li><a href="#cui_second_email" class="cui_btn_primary cui_first_non_button_yes" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes !</a></li>
   </ul> <!-- cui_dialog_buttons -->
   </div> <!-- cui_dialog_message -->
 </div> <!-- cui_fourth_non -->
-<div class="small-11 columns align-self-bottom">
+<div class="small-12 columns align-self-bottom">
 <div class="row align-bottom text-center bottom_hero">
 
     <div class="columns"><a class="item category_bottom" onclick="track('Click-item-category-bottom-art','Click-item-category-bottom-art')">
@@ -339,6 +357,12 @@ $(".cui_first_button1").click(function(e) {
        $(".svg-logo").removeClass("svg-happyfreshlogo_thinking");
    }, 2000);
     });
+
+
+    $(".cui_email_submit").click(function(e) {
+    $(".confetti_container").removeClass("confetti_container_hidden");
+    $(".confetti_container").addClass("confetti_container_displayed");
+    });
     
 </script> 
 </div> <!-- cui -->
@@ -349,16 +373,29 @@ $(".cui_first_button1").click(function(e) {
   <use xlink:href="symbol-defs.svg#bg_triangle_round"></use>
 </svg>
 <div class="row align-center padding5_both">
-<div class="column small-11">
-<h2 class="landing_quote">Creativity is an innate skill that can now be trained as any other skill</h2>
+<div class="column small-11 medium-12">
+<h2 class="landing_quote">Creativity is an innate skill that can be trained like any other skill</h2>
 <h4><a data-open="exampleModal1" onclick="track('Click-landing-statement-modal','Click-landing-statement-modal')">take a closer look to our statement</a></h4>
 <svg class="icon-svg bg_round1">
   <use xlink:href="symbol-defs.svg#bg_round"></use>
 </svg>
 <div class="reveal landing_modal" id="exampleModal1" data-reveal>
-  <h1>Why Creativity Matters</h1>
-  <p class="lead">Your couch. It is mine.</p>
-  <p>Below are a few examples of products that sound human and conversational, like a friend who’s chatting with you. HUMAN drivenI'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+<svg class="icon-svg svgicon-meka_logo_app">
+  <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app"></use>
+</svg>
+  <h1 class="padding5_both">Why Creativity Matters</h1>
+  <p class="lead">
+  <ul>
+  <li>Creativity isn’t just the domain for artists</li>
+  <li>Creativity is a set of skills, dispositions and capacities that can be developed : learning to be creative is akin to learning a sport</li>
+  <li>We are naturally creative and as we grow up we learn to be uncreative</li>
+  <li>Creativity allows us to continue to grow and develop as a society - promoving creativity in the world would be a catalyst for social change </li>
+  <li>We aim to help people discovering who they truly are and unlock their potential</li>  </p>
+  <h3 class="statement_final padding5_both">This is what we believe in.</h3>
+
+
+
+  </ul>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -374,7 +411,7 @@ $(".cui_first_button1").click(function(e) {
   <use xlink:href="symbol-defs.svg#landing_ai"></use>
 </svg> 
   <h3 class="red_h">Human Driven Artificial Intelligence</h3>
-    <p>mēkā converts big data into useful data. We use Machine Learning Algorithms to create comparison statistic models based on the inputs of the most creative profiles in their specific domains. Human + AI = smart AI.</p>
+    <p>mēkā converts big data into useful data. We use Machine Learning Algorithms to create comparison statistic models based on the inputs of the most creative profiles in their specific domains.</p>
   </div>
     </div>
         <svg class="icon-svg bg_triangle1">
@@ -414,38 +451,89 @@ $(".cui_first_button1").click(function(e) {
   <use xlink:href="symbol-defs.svg#bg_square_round"></use>
 </svg> 
 
-<div class="row align-center padding10_both">
-    <div class="column small-11">
-    <h2 class="red_h">MĒKĀ PRO (label)</h2>
-    <h2 class="red_h">Seek and hire creative candidates</h2>
-    <div class="small-10 columns align-self-bottom">
-    <div class="row align-bottom text-left">
-    <svg class="icon-svg pattern_blue_bg">
+
+<div class="row">
+     <div class="column small-12 medium-9">
+  <span class="label">launch 2018</span>
+    <h2 class="red_h">Introducing mēkā pro : seek and hire creative candidates</h2>
+   
+    </div>
+    <div class="column small-12 medium-3">
+    <svg class="icon-svg svgicon-meka_logo_app_pro">
+  <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app_pro"></use>
+</svg>
+    </div>
+    </div>
+
+
+<div class="row align-center">
+<svg class="icon-svg pattern_blue_bg">
   <use xlink:href="symbol-defs.svg#pattern_blue_bg"></use>
 </svg>
-    <div class="columns card"><div class="card-section"><h2>94%</h2></div><div class="card-section"><label>hiring manager agree creativity is key when evaluating candidates and prefer those with creative skills over conventional skills by more than 5 to 1</label></div></div>
-    <div class="columns card"><div class="card-section"><h2>8/10</h2></div><div class="card-section"><label>hiring managers view creativity as important to success</label></div></div>
-    <div class="columns card"><div class="card-section"><h2>86%</h2></div><div class="card-section"><label>Creativity is becoming an essential skill for employment in any type of business</label></div></div>
-    <div class="columns card"><div class="card-section"><h2>v%</h2></div><div class="card-section"><label>Business Development, Sales and People Management are functions that benefit most from creative skills</label></div></div>
+    <div class="column small-11 medium-12 padding10_bottom">
+<div class="padding10_both">
+    <h3 class="landing_quote text-left">“Creativity and problem-solving are becoming the key to success in the new market world”</h3>
+    <div class="row align-right ">
+    <div class="small-12 medium-5 columns">
+    <h5>Tacy Trowbridge</h5>
+    <h6>Lead for world wide education team at Adobe</h6>
     </div>
-    <h7>source : Adobe Creative Candidate Study</h7>
     </div>
+    </div>
+    <h3 class="text-center" >hiring managers agree</h3>
+    <div class="small-11 columns align-self-bottom">
+    <div class="row small-up-2 medium-up-4">
+   
+<div class=" columns align-center"><div class="card-section relative">
+      <svg class="icon-svg pattern_blue_bg_detail1">
+  <use xlink:href="symbol-defs.svg#pattern_blue_bg_detail1"></use>
+</svg><h2>86%</h2></div><div class="card-section"><p class="lead">Creativity is becoming an essential skill for employment in any type of business</p></div></div>
+    <div class="columns align-center"><div class="card-section relative">
+      <svg class="icon-svg pattern_blue_bg_detail1">
+  <use xlink:href="symbol-defs.svg#pattern_blue_bg_detail1"></use>
+</svg>
+    <h2>94%</h2>
+     
+    </div><div class="card-section"><p class="lead">Creativity is key when evaluating candidates </p></div></div>
 
-    <h3 class="padding10_both landing_quote text-left">“Creativity and problem-solving are becoming the key to success in the new market world” Trowbridge</h3>
+    
+    <div class=" columns align-center"><div class="card-section relative">
+      <svg class="icon-svg pattern_blue_bg_detail1">
+  <use xlink:href="symbol-defs.svg#pattern_blue_bg_detail1"></use>
+</svg><h2>52%</h2></div><div class="card-section"><p class="lead">Business Development & Sales are functions that benefit most from creative skills</p></div></div>
+
+<div class=" columns align-center"><div class="card-section relative">
+      <svg class="icon-svg pattern_blue_bg_detail1">
+  <use xlink:href="symbol-defs.svg#pattern_blue_bg_detail1"></use>
+</svg><h2>8/10</h2></div><div class="card-section"><p class="lead">Creativity is important to success</p></div></div>
+    </div>
+    <p class="text-right">source : Adobe Creative Candidate Study</p>
+    </div>
+    
+<div class="icon-svg meka_pro_labtop">
+
+</div>
 
      <div class="row">
-     <div class="column small-11 medium-3">
-    <h6 class="red_h">THE HIRING TOOL FOR A CHANGING JOB MARKET</h6>
+     <div class="column small-12 medium-3">
+ <h6 class="red_h">THE HIRING TOOL FOR A CHANGING JOB MARKET</h6>
+ <span class="label">launch 2018</span>
     </div>
-    <div class="column small-11 medium-9">
+    <div class="column small-12 medium-9">
     <ul>
     <li><h6>Be creative with creativity : setup creative profiles for various areas including multi-disciplinary profiles</h6></li>
     <li><h6>Save time using the pre-interview tool</h6></li>
-    <li><h6>Merge “in-demand” skills along with technical/specialist skills</h6></li>
+    <li><h6>Get support to merge in-demand skills along with your technical/specialist skills</h6></li>
     <li><h6>Keep your profiles and canditates in one place</h6></li>
     <li><h6>HR Consulting : offer your client the option to create their own profile</h6></li>
+    <li><h5>Help promoving creativity in the world for social change : <bold>part of the fee paid by your company goes to creative education foundations wolrdwide.</bold></h5></li>
     </ul>
-    <p><a data-open="exampleModal2" onclick="track('Click-landing-mekapro-modal','Click-landing-mekapro-modal')">Read more...</a></p>
+    <div class="row align-center">
+    <div class="small-11 medium-7 small-centered columns">
+    
+    <a class="button primary large" data-open="exampleModal2" onclick="track('Click-landing-mekapro-modal','Click-landing-mekapro-modal')">Join the pre-launch waiting list now</a>
+    </div>
+    </div>
     </div>
 
 <svg class="icon-svg bg_round2">
@@ -453,21 +541,29 @@ $(".cui_first_button1").click(function(e) {
 </svg>
 </div>
   
-<div class="reveal landing_modal" id="exampleModal2" data-reveal>
-  <h1>Awesome. I Have Itttt MEKA PRO.</h1>
-  <p class="lead">STUDY DATA HERE + source</p>
-  <div id="newsletterform">
-      <div class="wrap">
-          <h3>Découvrez et améliorez votre créativité.</h3>
-          <p class=small>Below are a few examples of products that sound human and conversational, like a friend who’s chatting with you. Recevez chaque samedi matin<bold> 5 articles sur la créativité sélectionnés par nos soins parmi toutes les publications en ligne.</bold> Service gratuit. Vous êtez libre de vous désinscrire lorsque vous le souhaitez. Tell us a bit about yourself.<a href="http://www.elhacedor.soy/newsletter_template/index.html" target="_blank" style="text-decoration:underline" onclick="track('Click-newsletter-log-exemple','Click-newsletter-log-exemple')">Voir un exemple</a></p>
-          <form action="newsletter_sign_up_send.php" method="post" id="newsletter" name="newsletter">
-              <input type="email" name="signup-email" id="signup-email" value="" placeholder="Entrez votre email pour vous abonner"/>
-              <input type="submit" value="S'inscrire" name="signup-button" id="signup-button" onclick="track('Click-newsletter-log-mekapro','Click-newsletter-log-mekapro')">
+<div class="reveal landing_modal text-center" id="exampleModal2" data-reveal>
+  <svg class="icon-svg svgicon-meka_logo_app_pro_modal">
+  <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app_pro"></use>
+</svg>
+  <h3 class="lead_pro_modal"><bold>hiring creativity</bold> </h3>
+  <div id="newsletterform_pro padding10_top">
+          <p class=small>Sign up to get notified when we launch. No spam, no fuss. Uninscribe anytime. </p>
+          
+
+
+          <div class="row align-center">
+          <div class="small-11 large-8 small-centered columns">
+          <form action="newsletter_sign_up_send_pro.php" method="post" id="newsletter_pro" name="newsletter_pro">
+          <input type="email" name="signup-email_pro" id="signup-email_pro" value="" placeholder="email@email.com" autofocus/>
+          <div class="nwslttr_loading_pro" id="response_pro"></div>
+          </div>
+          <div class="small-11 large-8 small-centered columns">
+          <input type="submit" value="Notify me" name="signup-button_pro" id="signup-button_pro" class="button primary expanded" onclick="track('Click-sign-up-pro','Click-sign-up-pro')">
           </form>
-          <div id="response"></div>
-      </div>
+          </div>
+          <div id="response_pro"></div>
   </div>
-  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  </div>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -479,12 +575,78 @@ $(".cui_first_button1").click(function(e) {
   <svg class="icon-svg bg_triangle2">
   <use xlink:href="symbol-defs.svg#bg_triangle"></use>
 </svg> 
-   <div class="index_twitter_bg_setup">
+
+<div class="row padding10_both">
+    <div class="column small-12">
+    <h2 class="red_h">Check our creativity guide</h2>
+    </div>
+    <div class="column medium-4 small-11">
+    <a class="card">
+  <div class="card-image">
+    <img src="https://images.pexels.com/photos/132987/pexels-photo-132987.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+    <span class="label alert card-tag">#Birdie</span>
+  </div>
+  <div class="card-section">
+    <h3 class="article-title">The Five Paradoxes of Creativity</h3>
+    <div class="article-details">
+      <span class="website">Website</span> &#8226;
+      <span class="time">Time</span> &#8226;
+      <span class="author">Author Name</span>
+    </div>
+    <p class="article-summary">Understand creativity means to get the different paradoxes that compose it. 
+</p>
+  </div>
+</a>
+</div>
+
+<div class="column medium-4 small-11">
+    <a class="card">
+  <div class="card-image">
+    <img src="https://images.pexels.com/photos/132987/pexels-photo-132987.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+    <span class="label alert card-tag">#Birdie</span>
+  </div>
+  <div class="card-section">
+    <h3 class="article-title">Empathy and creativity
+</h3>
+    <div class="article-details">
+      <span class="website">Website</span> &#8226;
+      <span class="time">Time</span> &#8226;
+      <span class="author">Author Name</span>
+    </div>
+    <p class="article-summary">The basis of human links and of artistic communication.</p>
+  </div>
+</a>
+
+
+
+
+</div>
+<div class="column medium-4 small-11">
+    <a class="card">
+  <div class="card-image">
+    <img src="https://images.pexels.com/photos/132987/pexels-photo-132987.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+    <span class="label alert card-tag">#Creativity</span>
+  </div>
+  <div class="card-section">
+    <h3 class="article-title">Can solitude stimulate creativity?
+</h3>
+    <div class="article-details">
+      <span class="website">Website</span> &#8226;
+      <span class="time">Time</span> &#8226;
+      <span class="author">Author Name</span>
+    </div>
+    <p class="article-summary">Looking for concentration on the social media area.</p>
+  </div>  
+</a>
+</div>
+</div>
+
+<div class="index_twitter_bg_setup">
  <div class="row align-center padding5_both">
   <div class="index_twitter_bg"></div>
 
  
-<div class="small-11 medium-6 medium-pull-6 columns card text-center">
+<div class="small-12 medium-6 medium-pull-6 columns card text-center">
   <div class="card-section">
   <div class="card-section">
     <svg class="icon-svg social_twitter">
@@ -492,50 +654,55 @@ $(".cui_first_button1").click(function(e) {
 </svg> 
   </div>
       <h3>Spread the word on Twitter</h3>
-      <p>We are just kicking off this project, and we really love what we do. Please help us by sharing this page on Twitter.</p>
+      <p>We are just kicking off this project, and we really love what we do. Spread creativity by sharing this page on Twitter ! Thank you.</p>
   </div>
  <div class="card-section">
-    <a class="button social_twitter_btn_txt" onclick="track('Click-spread-twitter','Click-spread-twitter')"> 
-  <svg class="icon-svg social_twitter_btn" version="1.1" id="social_twitter" viewBox="0 0 56.5 45.9">
-<path fill="#FFF" d="M56.5,5.4c-2.1,0.9-4.3,1.5-6.7,1.8c2.4-1.4,4.2-3.7,5.1-6.4c-2.2,1.3-4.7,2.3-7.4,2.8
-  C45.5,1.4,42.5,0,39.1,0c-7.5,0-13,7-11.3,14.2C18.2,13.8,9.7,9.1,3.9,2.1c-3,5.2-1.6,12,3.6,15.5c-1.9-0.1-3.7-0.6-5.3-1.5
-  C2.1,21.5,6,26.6,11.6,27.7c-1.6,0.4-3.4,0.5-5.2,0.2c1.5,4.6,5.8,8,10.8,8.1c-4.9,3.8-11,5.5-17.2,4.8c5.1,3.3,11.2,5.2,17.8,5.2
-  c21.5,0,33.7-18.2,33-34.5C53,9.8,55,7.8,56.5,5.4L56.5,5.4z"/>
-</svg>Tweet</a>
+    <a class="button primary large social_twitter_btn_txt" onclick="track('Click-spread-twitter','Click-spread-twitter')"> 
+   <svg class="icon-svg social_twitter_btn">
+  <use xlink:href="symbol-defs.svg#social_twitter"></use>
+</svg> Tweet</a>
   </div>
   </div>
     </div>
 </div>
-<div class="row align-center padding5_both">
-    <div class="column small-11">
-    <h2 class="red_h">recent thoughts</h2>
-    
-</div>
-</div>
+
+
 <footer class="footer">
   <div class="row">
-   <div class="small-11 columns">
+   <div class="small-12 columns">
       <div class="logo hide-for-small-only">
       <svg class="icon-svg svgicon-meka_logo_app">
   <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app"></use>
 </svg></div> 
       <p class="footer-links">
-        <a href="#" onclick="track('Click-footer-legal','Click-footer-legal')">Legal</a>
-        <a href="#" onclick="track('Click-footer-blog','Click-footer-blog')">Blog</a>
-        <a href="#" onclick="track('Click-footer-about','Click-footer-about')">About</a>
-        <a href="#" onclick="track('Click-footer-faq','Click-footer-faq')">Faq</a>
-        <a href="#" onclick="track('Click-footer-newsletter','Click-footer-newsletter')">Newsletter</a>
-        <a href="#" onclick="track('Click-footer-contact','Click-footer-contact')">Contact</a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-legal','Click-footer-legal')">Legal</a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-blog','Click-footer-blog')">Blog</a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-about','Click-footer-about')">About</a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-faq','Click-footer-faq')">Faq</a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-newsletter','Click-footer-newsletter')">Newsletter</a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-contact','Click-footer-contact')">Contact</a>
       </p>
       <ul class="inline-list social">
-        <a href="#" onclick="track('Click-footer-social-fb','Click-footer-social-fb')"><i class="fi-social-facebook"></i></a>
-        <a href="#" onclick="track('Click-footer-social-twitter','Click-footer-social-twitter')"><i class="fi-social-twitter"></i></a>
-        <a href="#" onclick="track('Click-footer-social-linkedin','Click-footer-social-linkedin')"><i class="fi-social-linkedin"></i></a>
-        <a href="#" onclick="track('Click-footer-social-github','Click-footer-social-github')"><i class="fi-social-github"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-fb','Click-footer-social-fb')"><i class="fi-social-facebook"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-twitter','Click-footer-social-twitter')"><i class="fi-social-twitter"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-linkedin','Click-footer-social-linkedin')"><i class="fi-social-linkedin"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-github','Click-footer-social-github')"><i class="fi-social-github"></i></a>
       </ul>
-      <p class="copywrite">©2017 uxpages</p>
+      <p class="copywrite">© 2017 uxpages</p>
     </div>
   </div>
+
+  <div class="reveal landing_modal" id="exampleModal3" data-reveal>
+  <h2>Awesome. I Have Itttt MEKA PRO.</h2>
+  <p class="lead">STUDY DATA HERE + source</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
 </footer>
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand:400,500,700" rel="stylesheet">
     <script src="js/vendor/jquery.js"></script>
