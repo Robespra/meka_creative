@@ -446,7 +446,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #5b4e60;
+  color: #8898aa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2702,8 +2702,8 @@ select {
   border-radius: 3px;
   background: #fefefe;
   box-shadow: none;
-  overflow: hidden;
-  color: #5b4e60; }
+  color: #8898aa;
+  overflow: hidden;}
   .card > :last-child {
     margin-bottom: 0; }
 
