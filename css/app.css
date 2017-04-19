@@ -1,5 +1,5 @@
 
-body{font-family: 'Quicksand', sans-serif;
+body{font-family: 'Playfair Display', serif;
   font-weight: 500;}
 h1,
 h2,
@@ -11,7 +11,10 @@ h6 {
   font-weight: 700;
 }
 .red_h {
-  color:#e34953
+  color:#e34953;
+}
+.blue_h{
+  color: #1850fa;
 }
 .padding10_both {
 	padding: 10% 0;
@@ -106,6 +109,11 @@ h6 {
 
 .card-image {
   position: relative; }
+
+  .card-image img {
+  display: block;
+  margin:  0 auto;
+  width: 60%; }
 
 .card-tag {
   position: absolute;
@@ -204,8 +212,8 @@ svg.icon-svg.svgicon-meka_logo_app_pro {
 }
 
 svg.svgicon-meka_logo_app_pro_modal{
-  fill: #e34953;
-stroke: #e34953;
+  fill: #28e2fc;
+stroke: #28e2fc;
   width: 15em;
   height: auto;
 }
@@ -222,12 +230,12 @@ z-index: 9999;}
 .logo-top:hover{opacity:0.5;filter:alpha(opacity=50);}
 .meka {font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  background-color:#1E81ED;padding: 1%;}
+  background-color:#1850fa;padding: 1%;}
 .meka_inner {height: 93vh;}
 .cui_dialog{overflow: hidden;max-height: 450px;}
 .btn_cta_hero{
 	margin-top: 5%;
-	background-color:#ff7473;
+	background-color:#cdffcc;
 	min-width: 320px;
 	text-align: center;
 }
@@ -246,14 +254,14 @@ ul.message li{
   overflow: hidden;
 font-size: 1em;
 line-height: 1.3em;
-color:#fff;
+color:#000000;
 letter-spacing: .05em; /* Adjust as needed */
 margin: 1% auto;
 left: 0;
 height: auto;
 padding: 3%;
 width: 100%;
-background-color:#ff7473;
+background-color:#cdffcc;
 opacity: 0.8;
 border-radius: 10px;
 }
@@ -996,7 +1004,7 @@ Single-colored icons can be modified like so:
 }
 
 .bg_triangle_round1, .bg_triangle1, .bg_triangle2, .bg_square_round1, .bg_round1, .bg_round, .bg_square_round, .bg_triangle, .bg_triangle_round, .bg_round2 {
-stroke: #D9C38E;
+stroke: #cdffcc;
   fill: none;
   }
 
@@ -1011,7 +1019,7 @@ stroke: #D9C38E;
 }
 
 .landing_modal {
-  background-color: #6cb0ff;
+  background-color: #1850fa;
   color: #fff;
   border: none;
 }
@@ -1029,7 +1037,7 @@ stroke: #D9C38E;
 }
 .relative {
   position: relative;
-  color: #fff;
+  color: #1850fa;
 }
 
 .pattern_blue_bg{
@@ -1082,7 +1090,7 @@ svg.social_twitter_btn {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #6cb0ff;
+  background-color: #28e2fc;
   transform: skewY(-3deg);
   transform-origin: top left;
   z-index: -9999;
