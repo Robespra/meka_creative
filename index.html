@@ -42,16 +42,33 @@
   </head>
   <body>
 <div class="meka">
-  <div class="row align-center meka_inner">
-  <div class="column small-12">
-  <div class="logo_header">
+<nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
   <h1 class="hidden-h1">meka creative</h1>
   <a href="http://www.thinkingmeka.me" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical">
   <svg class="icon-svg svgicon-meka_logo_app">
   <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app"></use>
 </svg>
   </a>
-  </div> <!-- logo_header -->
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <!-- <li><a href="#">Sign-in</a></li> -->
+        <li>
+          <button type="button" class="button hollow topbar-responsive-button" data-open="exampleModal2" onclick="track('Click-landing-mekapro-modal','Click-landing-mekapro-modal')">Login</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div class="row align-center meka_inner">
+  <div class="column small-12">
+  
   </div> <!-- columns -->
 
 <div class="meka_bg_zindex">
@@ -88,9 +105,9 @@
   <stop  offset="1" style="stop-color:#C2982E"/>
   <stop  offset="1" style="stop-color:#A2792C"/>
 </linearGradient>
-<circle fill="#1E81ED" stroke="#479DEA" stroke-width="25" stroke-miterlimit="10" cx="441.5" cy="477.9" r="427.9"/>
+<circle fill="#3D70FC" stroke="#5983FC" stroke-width="25" stroke-miterlimit="10" cx="441.5" cy="477.9" r="427.9"/>
 <g>
-  <path fill="#479DEA" d="M199.2,468.1c-37.8-74.5-74.3-128.4-82.2-176.2c-9.1-46.9,10.5-87.6,57.3-115.6
+  <path fill="#5983FC" d="M199.2,468.1c-37.8-74.5-74.3-128.4-82.2-176.2c-9.1-46.9,10.5-87.6,57.3-115.6
     c45.9-26.7,105.1-25.8,143.1,17.1c39.2,41.2,57.1,124.5,48.2,224.1c-8.1,100.2-36.3,190.5-54.9,253.1c-19.7,63-29.7,98.4-28.8,99.6
     c-0.1,1,5.5-36.3-6.1-94C265.5,618.8,237.9,541,199.2,468.1z"/>
 </g>
@@ -413,7 +430,7 @@ $(".cui_first_button1").click(function(e) {
 </div> <!-- row -->
   <div class="row align-center">
     <div class="column small-11 large-5">
-    <div class="column align-self-top card landing_box_shadow">
+    <div data-position="left" data-offset="60"  class="column align-self-top card notViewed animBlock landing_box_shadow">
     <div class="card-section">
     <svg class="icon-svg landing_ai">
   <use xlink:href="symbol-defs.svg#landing_ai"></use>
@@ -425,7 +442,7 @@ $(".cui_first_button1").click(function(e) {
         <svg class="icon-svg bg_triangle1">
   <use xlink:href="symbol-defs.svg#bg_triangle"></use>
 </svg>
-      <div class="column align-self-bottom card margin20_top landing_box_shadow">
+      <div data-position="left" data-offset="60"  class="column align-self-bottom card margin20_top landing_box_shadow notViewed animBlock">
       <div class="card-section">
     <svg class="icon-svg landing_perso_radar">
   <use xlink:href="symbol-defs.svg#landing_perso_radar"></use>
@@ -437,7 +454,7 @@ $(".cui_first_button1").click(function(e) {
     </div>
     <div class="column small-11 large-5 align-self-middle">
 
-      <div class="column align-self-middle card landing_box_shadow">
+      <div data-position="right" data-offset="250" class="column align-self-middle card landing_box_shadow notViewed animBlock">
       <div class="card-section">
     <svg class="icon-svg landing_perso_progress">
   <use xlink:href="symbol-defs.svg#landing_perso_progress"></use>
@@ -518,8 +535,8 @@ $(".cui_first_button1").click(function(e) {
     <p class="text-right">source : Adobe Creative Candidate Study</p>
     </div>
     
-<div class="icon-svg meka_pro_labtop">
-
+<div data-position="left" data-offset="250" class="icon-svg meka_pro_labtop notViewed animBlock">
+  <img src="images/meka_pro_sample.png">
 </div>
 
      <div class="row">
@@ -652,27 +669,54 @@ $(".cui_first_button1").click(function(e) {
 <div class="index_twitter_bg_setup">
  <div class="row align-center padding5_both">
   <div class="index_twitter_bg"></div>
-
  
 <div class="small-12 medium-6 medium-pull-6 columns card text-center">
   <div class="card-section">
   <div class="card-section">
-    <svg class="icon-svg social_twitter">
+   <div class="row align-center padding5_both">
+   <div class="small-12 medium-6">
+     
+     <svg class="icon-svg social_twitter">
   <use xlink:href="symbol-defs.svg#social_twitter"></use>
 </svg> 
+   </div>
+   <div class="small-12 medium-6">
+     
+     <svg class="icon-svg social_linkedin">
+  <use xlink:href="symbol-defs.svg#social_linkedin"></use>
+</svg> 
+   </div>
+   </div>
+
   </div>
-      <h3>Spread the word on Twitter</h3>
-      <p>We are just kicking off this project, and we really love what we do. Spread creativity by sharing this page on Twitter ! Thank you.</p>
+      <h3>Spread the word !</h3>
+      <p>We are just kicking off this project, and we really love what we do. Spread creativity by sharing this page. Thank you.</p>
   </div>
  <div class="card-section">
-    <a class="button primary large social_twitter_btn_txt" onclick="track('Click-spread-twitter','Click-spread-twitter')"> 
-   <svg class="icon-svg social_twitter_btn">
+<div class="button-hover-reveal-wrapper">
+  <label>Spread the world !</label>
+  <a href="http://twitter.com/share"
+      data-url="https://www.thinkingmeka.com"
+      data-via="hacedor_el"
+      data-text="tt"
+      data-related="meka - explore creativity"
+      data-count="vertical" class="button-hover-reveal twitter"><svg class="icon-svg social_twitter_btn">
   <use xlink:href="symbol-defs.svg#social_twitter"></use>
-</svg> Tweet</a>
+</svg> Tweeter</a>
+
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.thinkingmeka.com&title=mekacreative&summary=mekasummary&source=source" class="button-hover-reveal linkedin"><svg class="icon-svg social_linkedin_btn">
+  <use xlink:href="symbol-defs.svg#social_linkedin"></use>
+</svg>  LinkedIn</a>
+</div>
   </div>
   </div>
     </div>
 </div>
+
+
+
+
 
 
 <footer class="footer">
