@@ -1,6 +1,15 @@
-
 body{font-family: 'Playfair Display', serif;
   font-weight: 500;}
+  ::selection {
+    background-color: #cdffcc;
+    color: #5b4e60;
+}
+::-moz-selection {
+    background-color: #cdffcc;
+    color: #5b4e60;
+}
+
+
 h1,
 h2,
 h3,
@@ -229,7 +238,7 @@ stroke: #28e2fc;
 .meka {font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   background-color:#1850fa;padding: 1%;}
-.meka_inner {height: 93vh;}
+.meka_inner {height: 83vh;}
 .cui_dialog{overflow: hidden;max-height: 450px;}
 .btn_cta_hero{
 	margin-top: 5%;
@@ -436,7 +445,7 @@ color: #5b4e60;
 .cui_dialog_buttons input[type="submit"]:hover{opacity:0.7;cursor:pointer;}
 
 .bottom_hero label{
-  color: #fff;
+  color: #cdffcc;
 }
 @keyframes blink_dots {50% { color: transparent;}}
 .cui_loader { font-size: 300px;opacity: 0;
@@ -450,7 +459,7 @@ color: #5b4e60;
 -ms-transition: all 1s  ease-in-out;  
 transition: all 1s ease-in-out;
 }
-.cui_loader__dot { animation: 1s blink_dots infinite;color: #fff; }
+.cui_loader__dot { animation: 1s blink_dots infinite;color: #cdffcc; }
 .cui_loader__dot:nth-child(2) { animation-delay: 250ms }
 .cui_loader__dot:nth-child(3) { animation-delay: 500ms }
 
@@ -513,7 +522,6 @@ position: relative;}
 .cui_dialog_avatar {
     width: 90%;
     height: 90%;
-    padding-top: 3%;
     margin: 0 auto;
 transition:All 1s ease-in-out;
 -webkit-transition:All 1s ease-in-out;
@@ -573,17 +581,18 @@ transform-origin: 50%;
 }
 
 #response {
-  display: block;
-    transition:All 6s ease-in-out;
--webkit-transition:All 6s ease-in-out;
--moz-transition:All 6s ease-in-out;
--o-transition:All 6s ease-in-out;
-background-color: #7df1a7;
+    transition:All 6s 12s ease-in-out;
+-webkit-transition:All 6s 12s ease-in-out;
+-moz-transition:All 6s 12s ease-in-out;
+-o-transition:All 6s 12s ease-in-out;
+  background-color: #7df1a7;
 }
 #response p {
 color: #5b4e60;
 }
-
+.success_po {
+  display: block;
+}
 .nwslttr_loading {
   display: none;
   background-color: black;
@@ -594,6 +603,7 @@ color: #5b4e60;
     width: 80%;
     left: 5%;
     z-index: 999;
+        overflow: visible;
 }
 
 .confetti_container_hidden {
@@ -1193,7 +1203,8 @@ svg.social_twitter_btn svg.social_linkedin_btn{
 
 .topbar-responsive {
   background: none;
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 100px;
 }
 
 .topbar-responsive .topbar-responsive-logo {
