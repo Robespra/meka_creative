@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private static $dbName = 'newsletter';
-    private static $dbHost = 'localhost';
-    private static $dbUsername = 'root';
-    private static $dbUserPassword = 'root';
+    private static $dbName = 'mekacreagbadmin7';
+    private static $dbHost = 'mekacreagbadmin7.mysql.db';
+    private static $dbUsername = 'mekacreagbadmin7';
+    private static $dbUserPassword = 'Lemdpdatab47';
 
     private static $cont = null;
 
