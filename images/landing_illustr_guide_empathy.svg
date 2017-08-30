@@ -4,8 +4,8 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 260 260" enable-background="new 0 0 260 260" xml:space="preserve">
 <rect x="30.1" y="60.8" transform="matrix(-0.9123 -0.4095 0.4095 -0.9123 167.5846 271.2739)" fill="#FFFFFF" stroke="#D7DBDD" stroke-width="17" stroke-miterlimit="10" width="165.5" height="113.7"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="4" stroke-miterlimit="10" cx="136.5" cy="170.5" r="58.4"/>
+<circle fill="none" stroke="#ff616e" stroke-width="4" stroke-miterlimit="10" cx="136.5" cy="170.5" r="58.4"/>
 <circle fill="none" stroke="#002DFC" stroke-width="4" stroke-miterlimit="10" cx="195.2" cy="171.1" r="58.4"/>
-<path fill="#CDFFCC" d="M166.9,122.3c-17.2,9.5-28.8,27.7-28.8,48.7c0,20.2,10.8,37.9,26.9,47.6c17.2-9.5,28.8-27.7,28.8-48.7
+<path fill="#ffc171" d="M166.9,122.3c-17.2,9.5-28.8,27.7-28.8,48.7c0,20.2,10.8,37.9,26.9,47.6c17.2-9.5,28.8-27.7,28.8-48.7
 	C193.8,149.8,183,132.1,166.9,122.3z"/>
 </svg>

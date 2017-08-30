@@ -620,7 +620,7 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #dd2531; }
+    color: #ff616e; }
   a img {
     border: 0; }
 
@@ -1034,19 +1034,19 @@ select {
     background-image: none; }
 
 .is-invalid-input:not(:focus) {
-  border-color: #c60f13;
+  border-color: #ff616e;
   background-color: #f8e6e7; }
   .is-invalid-input:not(:focus)::-webkit-input-placeholder {
-    color: #c60f13; }
+    color: #ff616e; }
   .is-invalid-input:not(:focus)::-moz-placeholder {
-    color: #c60f13; }
+    color: #ff616e; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
-    color: #c60f13; }
+    color: #ff616e; }
   .is-invalid-input:not(:focus)::placeholder {
-    color: #c60f13; }
+    color: #ff616e; }
 
 .is-invalid-label {
-  color: #c60f13; }
+  color: #ff616e; }
 
 .form-error {
   display: none;
@@ -1054,7 +1054,7 @@ select {
   margin-bottom: 1rem;
   font-size: 0.75rem;
   font-weight: bold;
-  color: #c60f13; }
+  color: #ff616e; }
   .form-error.is-visible {
     display: block; }
 
@@ -1199,7 +1199,7 @@ select {
     margin-right: 0;
     margin-left: 0; }
   .button.primary {
-    background-color: #f57b82;
+    background-color: #f57b82; box-shadow: 0 15px 35px rgba(0,0,0,.1);
     color: #fffff; }
     .button.primary:hover, .button.primary:focus {
       background-color: #d0202b;
@@ -1211,7 +1211,7 @@ select {
       background-color: #229eca;
       color: #fffff; }
   .button.alert {
-    background-color: #c60f13;
+    background-color: #ff616e;
     color: #fefefe; }
     .button.alert:hover, .button.alert:focus {
       background-color: #9e0c0f;
@@ -1261,8 +1261,8 @@ select {
         border-color: #15637e;
         color: #15637e; }
     .button.hollow.alert {
-      border: 1px solid #c60f13;
-      color: #c60f13; }
+      border: 1px solid #ff616e;
+      color: #ff616e; }
       .button.hollow.alert:hover, .button.hollow.alert:focus {
         border-color: #63080a;
         color: #63080a; }
@@ -1312,7 +1312,7 @@ select {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-        background-color: #c60f13;
+        background-color: #ff616e;
         color: #fefefe; }
     .button.disabled.success, .button[disabled].success {
       opacity: 0.25;
@@ -1424,7 +1424,7 @@ select {
       background-color: #229eca;
       color: #5b4e60; }
   .button-group.alert .button {
-    background-color: #c60f13;
+    background-color: #ff616e;
     color: #fefefe; }
     .button-group.alert .button:hover, .button-group.alert .button:focus {
       background-color: #9e0c0f;
@@ -2636,7 +2636,7 @@ select {
     color: #f57b82; }
     .tabs-title > a:hover {
       background: #fefefe;
-      color: #dd2531; }
+      color: #ff616e; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
       background: #e6e6e6;
       color: #f57b82; }
@@ -2730,7 +2730,7 @@ select {
       flex: 1 0 auto;
   padding: 1rem; }
   .card-section > :last-child {
-    margin-bottom: 0; }
+    /* margin-bottom: 0; */ }
 
 .media-object {
   display: -ms-flexbox;
@@ -2954,7 +2954,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     background: #479DEA;
     color: #5b4e60; }
   .badge.alert {
-    background: #c60f13;
+    background: #ff616e;
     color: #fefefe; }
   .badge.success {
     background: #5da423;
@@ -2986,7 +2986,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     background: #479DEA;
     color: #5b4e60; }
   .label.alert {
-    background: #c60f13;
+    background: #ff616e;
     color: #fefefe; }
   .label.success {
     background: #5da423;
@@ -3011,7 +3011,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .progress.secondary .progress-meter {
     background-color: #479DEA; }
   .progress.alert .progress-meter {
-    background-color: #c60f13; }
+    background-color: #ff616e; }
   .progress.success .progress-meter {
     background-color: #5da423; }
   .progress.warning .progress-meter {

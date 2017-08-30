@@ -41,11 +41,66 @@
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body>
+ <div class="bg-static"> 
+    <!-- Start bg-static -->
+    <nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+  <h1 class="hidden-h1">meka creative blog</h1>
+  <a href="https://www.mekacreative.io" onclick="track('Click-logo-top-blog','Click-logo-top-blog')" rel="canonical">
+  <svg class="icon-svg svgicon-meka_logo_app">
+  <use xlink:href="../symbol-defs.svg#svgicon-meka_logo_app"></use>
+</svg>
+  </a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <!-- <li><a href="#">Sign-in</a></li> -->
+        <li>
+          <button type="button" class="button hollow topbar-responsive-button" data-open="exampleModal2-blog" onclick="track('Click-landing-mekapro-modal-blog','Click-landing-mekapro-modal-blog')">Login</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   
   
+<div class="reveal landing_modal text-center" id="exampleModal2-blog" data-reveal>
+  <svg class="icon-svg svgicon-meka_logo_app_pro_modal">
+  <use xlink:href="../symbol-defs.svg#svgicon-meka_logo_app_pro"></use>
+</svg>
+  <h3 class="lead_pro_modal"><bold>hiring creativity</bold> </h3>
+  <div id="newsletterform_pro padding10_top">
+          <p class=small>Sign up to get notified when we launch. No spam, no fuss. Uninscribe anytime. </p>
+          
 
-  <div class="row" id="content">
-      <div class="medium-8 columns">
-      
+
+          <div class="row align-center">
+          <div class="small-11 large-8 small-centered columns">
+          <form action="newsletter_sign_up_send_pro.php" method="post" id="newsletter_pro" name="newsletter_pro">
+          <input type="email" name="signup-email_pro" id="signup-email_pro" value="" placeholder="email@email.com" autofocus/>
+          <div class="nwslttr_loading_pro" id="response_pro"></div>
+          </div>
+          <div class="small-11 large-8 small-centered columns">
+          <input type="submit" value="Notify me" name="signup-button_pro" id="signup-button_pro" class="button primary expanded" onclick="track('Click-sign-up-pro','Click-sign-up-pro')">
+          </form>
+          </div>
+          <div id="response_pro"></div>
+  </div>
+  </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h2>Our Blog</h2>
+      </div>
+    </div>
+ </div>
+    <!-- End bg-static -->
+    <div class="row align-center padding10_bottom" id="content">
+            <div class="small-12 medium-8">
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -87,18 +142,139 @@
     </div>
 </form>
 </div>
-
+</div>
 <!--End mc_embed_signup-->
+    </div>
+
+<div class="index_twitter_bg_setup gradient-bg">
+ <div class="row align-center padding5_both">
+  <div class="index_twitter_bg"></div>
+ 
+<div class="small-12 medium-6 medium-pull-6 columns card text-center">
+  <div class="card-section">
+  <div class="card-section">
+   <div class="row align-center padding5_both">
+   <div class="small-12 medium-6">
+     
+     <svg class="icon-svg social_twitter">
+  <use xlink:href="../symbol-defs.svg#social_twitter"></use>
+</svg> 
+   </div>
+   <div class="small-12 medium-6">
+     
+     <svg class="icon-svg social_linkedin">
+  <use xlink:href="../symbol-defs.svg#social_linkedin"></use>
+</svg> 
+   </div>
+   </div>
+
   </div>
-</div> 
+      <h3>Spread the word !</h3>
+      <p>We are just kicking off this project, and we really love what we do. Spread creativity by sharing this page. Thank you.</p>
+  </div>
+ <div class="card-section">
+<div class="button-hover-reveal-wrapper">
+  <label>Spread the world !</label>
+  <a href="http://twitter.com/share"
+      data-url="https://www.mekacreative.io"
+      data-via="hacedor_el"
+      data-text="meka is a chat bot using artificial intelligence to help train and develop your creativity"
+      data-related="meka - explore creativity"
+      data-count="vertical" class="button-hover-reveal twitter"><svg class="icon-svg social_twitter_btn">
+  <use xlink:href="symbol-defs.svg#social_twitter"></use>
+</svg> Tweeter</a>
+
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mekacreative.io&title=mekacreative&summary=meka is a chat bot using artificial intelligence to help train and develop your creativity&source=source" class="button-hover-reveal linkedin"><svg class="icon-svg social_linkedin_btn">
+  <use xlink:href="../symbol-defs.svg#social_linkedin"></use>
+</svg>  LinkedIn</a>
+</div>
+  </div>
+  </div>
+    </div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="row">
+   <div class="small-8 columns">
+      <div class="logo hide-for-small-only">
+      <svg class="icon-svg svgicon-meka_logo_app">
+  <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app"></use>
+</svg></div> 
+      <p class="footer-links">
+      <a href="https://www.mekacreative.io" onclick="track('Click-footer-legal','Click-footer-legal')">Home</a>
+        <a href="#" onclick="track('Click-footer-legal','Click-footer-legal')">Legal</a>
+        <a href="https://mekacreative.io/blog/blog" onclick="track('Click-footer-blog','Click-footer-blog')">Blog</a>
+        <a href="#" onclick="track('Click-footer-about','Click-footer-about')">About</a>
+        <a href="#" onclick="track('Click-footer-newsletter','Click-footer-newsletter')">Newsletter</a>
+        <a href="#" onclick="track('Click-footer-contact','Click-footer-contact')">Contact</a>
+      </p>
+      <ul class="inline-list social">
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-fb','Click-footer-social-fb')"><i class="fi-social-facebook"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-twitter','Click-footer-social-twitter')"><i class="fi-social-twitter"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-linkedin','Click-footer-social-linkedin')"><i class="fi-social-linkedin"></i></a>
+        <a data-open="exampleModal3" onclick="track('Click-footer-social-github','Click-footer-social-github')"><i class="fi-social-github"></i></a>
+      </ul>
+      <p class="copywrite">©2017 uxpages</p>
+    </div>
+
+    <div class="small-4 columns">
+      <div class="logo_footer">
+      <svg class="icon-svg svgicon-meka_logo_app">
+  <use xlink:href="../symbol-defs.svg#svgicon-meka_logo_app"></use>
+</svg></div> 
+      
+    </div>
+
+
+  </div>
+
+  <div class="reveal landing_modal" id="exampleModal3" data-reveal>
+  <h2>Awesome. I Have Itttt MEKA PRO.</h2>
+  <p class="lead">STUDY DATA HERE + source</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+</footer>
 
 
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-    <script src="../js/vendor/jquery.js"></script>
-    <script src="../js/vendor/what-input.js"></script>
-    <script src="../js/vendor/foundation.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/newsletter_sign_up_lib.js"></script>
 
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105004392-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script>
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".load_intro").fadeOut("slow");;
+    $(".logo").fadeOut("slow");;
+    $("#dot").fadeOut("slow");;
+  });
+</script>
   </body>
 </html>
 

@@ -6,14 +6,14 @@
 <path fill="#FFFFFF" stroke="#D7DBDD" stroke-width="53" stroke-miterlimit="10" d="M47.2,191.4c31.1,24.2,141.9-3.7,165.3-36.3
 	c23.4-32.4-1.3-81-32.3-105.3S99.6,42.6,73.4,78.5C50,111,16.1,167,47.2,191.4z"/>
 <circle fill="none" stroke="#002DFC" stroke-width="3" stroke-miterlimit="10" cx="99" cy="106.6" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="99.1" cy="78.9" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="99" cy="133.8" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="127" cy="78.9" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="99" cy="189.6" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="99" cy="161.3" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="99.1" cy="78.9" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="99" cy="133.8" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="127" cy="78.9" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="99" cy="189.6" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="99" cy="161.3" r="11.5"/>
 <circle fill="none" stroke="#002DFC" stroke-width="3" stroke-miterlimit="10" cx="99" cy="215.6" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="127" cy="161.3" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="127" cy="161.3" r="11.5"/>
 <circle fill="none" stroke="#002DFC" stroke-width="3" stroke-miterlimit="10" cx="127" cy="133.8" r="11.5"/>
-<circle fill="none" stroke="#28E2FC" stroke-width="3" stroke-miterlimit="10" cx="127" cy="189.6" r="11.5"/>
-<circle fill="#CDFFCC" cx="164.1" cy="106.7" r="11.5"/>
+<circle fill="none" stroke="#ffc171" stroke-width="3" stroke-miterlimit="10" cx="127" cy="189.6" r="11.5"/>
+<circle fill="#ff616e" cx="164.1" cy="106.7" r="11.5"/>
 </svg>
