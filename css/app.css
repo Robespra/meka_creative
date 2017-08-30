@@ -512,7 +512,7 @@ text-align: center;
 .cui_dialog_hide {opacity:0; z-index: -9999; position: absolute;height: 50%;}
 .cui_dialog_display {opacity:1; position:relative;z-index: 1; 
 height: 50%;}
-.block-text {max-height: 50%;    z-index: 9999;}
+.block-text {max-height: 50%;        z-index: 4;}
 .cui_dialog_greyed {display:none;opacity:0.4;
 transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
 -webkit-transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
@@ -543,7 +543,7 @@ position: relative;}
   position: absolute;
 /*   padding-top: 10%; */
   left:9%;
-  z-index: 9998;
+  z-index: 3;
 }
 
 .cui_dialog_avatar {
@@ -1432,7 +1432,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', end
 
 .callout.primary, .top-bar, .top-bar ul {
   background: transparent;
-  border: none;
+  border: none;position: relative;
+  z-index: 2;
 }
 
 .bg-static h2{
