@@ -1484,3 +1484,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', end
 color: #fff;
 }
 
+.contact_send {
+  min-height: 500px;
+      margin-bottom: 25%;
+}
+
+.contact_send [type='text']:focus, .contact_send textarea:focus  {
+  border: 1px solid #f1f1f1;
+}
+
+.contact_send-email {
+      color: #5b4e60;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0;
+    border-radius: 0;
+
+}
+
+.contact_send-text{
+  width: 100%;
+  min-height: 200px;
+  color: #5b4e60;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0;
+    border-radius: 0;
+}
