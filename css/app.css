@@ -1130,6 +1130,7 @@ background: linear-gradient(to right, rgba(255,97,110,1) 0%, rgba(255,193,113,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', endColorstr='#ffc171', GradientType=1 );
   color: #fff;
   border: none;
+      border-top: 10px solid white;
 }
 .landing_modal .close-button {
   color: #fff;
@@ -1255,6 +1256,12 @@ svg.social_twitter_btn svg.social_linkedin_btn{
     height: 400px;
     overflow: visible;
     margin-bottom: 30%;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .index_twitter_bg_setup{
+    height: auto;
+  }
 }
 .index_twitter_bg {
   position: absolute;
@@ -1516,4 +1523,12 @@ color: #fff;
     font-size: 2.5em;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+  }
+
+  .text_center {
+    text-align: center;
+  }
+
+   .text_right {
+    text-align: right;
   }
