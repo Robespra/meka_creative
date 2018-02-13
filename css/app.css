@@ -32,11 +32,15 @@ h6 {
 
 @media only screen and (min-width:769px){
 .blue_h_container {
-      top: -130px;
+      top: -190px;
      position: absolute;
 }
 }
 
+.tool {
+      margin-left: 4em;
+      margin-bottom: 4em;
+}
 
 .blue_h{
   color: #1850fa;
