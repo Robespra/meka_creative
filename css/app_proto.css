@@ -1,4 +1,13 @@
+
+*{
+   margin:0;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+}
+
 body{font-family: 'Quicksand', sans-serif;
+background-color: #F1F1F1;
   font-weight: 500;}
   ::selection {
     background-color: #ffc171;
@@ -182,10 +191,10 @@ h6 {
 
 
 .footer {
-  border-top:1px solid #D7DBDD; 
+/*   border-top:1px solid #D7DBDD;  */
   text-align: center;
   font-size: 1.2rem;
-  padding: 1rem; }
+  /* padding: 1rem; */ }
   .footer .social a {
     display: inline-block;
     width: 2rem;
@@ -218,7 +227,7 @@ h6 {
       padding: 0 0.4rem 0 0.8rem; }
   @media only screen and (min-width: 40.063em) {
     .footer {
-      padding: 4rem; }
+      /* padding: 4rem; */ }
       .footer p {
         text-align: left; }
       .footer .social {
@@ -272,8 +281,17 @@ display: inline-block;
 .logo-top{display:block;width:150px;padding: 5%;z-index:9998;position:relative;height:auto;-webkit-transition:opacity;-webkit-transition-timing-function:ease-out;-webkit-transition-duration:500ms;}
 .logo-top:hover{opacity:0.5;filter:alpha(opacity=50);}
 .meka {font-family: 'Quicksand', sans-serif; overflow: hidden;
+background-color: #fff;
   font-weight: 500;
-  background: rgba(255,97,110,1);
+      width: 80%;
+    margin: 5% auto;}
+.meka_inner {
+      padding: 0;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    height: 200px;
+background: rgba(255,97,110,1);
 background: -moz-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,97,110,1)), color-stop(100%, rgba(255,193,113,1)));
 background: -webkit-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
@@ -281,8 +299,6 @@ background: -o-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 
 background: -ms-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
 background: linear-gradient(to right, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', endColorstr='#ffc171', GradientType=1 );
-padding: 1% 1% 0 1%;}
-.meka_inner {position: relative;height: 83vh; margin-bottom: 5%;
 }
 
 .z-index_bottom {
@@ -497,11 +513,12 @@ color: #5b4e60;
   color: #fff;
 }
 @keyframes blink_dots {50% { color: transparent;}}
-.cui_loader { font-size: 300px;opacity: 0;
+.cui_loader {     font-size: 100px;
+    opacity: 0;
     position: absolute;
-    right: -40%;
-    top: 0;
-  text-align: center;
+ left: 29%;
+    top: 35%;
+    text-align: center;
 -webkit-transition: all 1s ease-in-out;  
 -moz-transition: all 1s ease-in-out;  
 -o-transition: all 1s  ease-in-out;  
@@ -533,7 +550,7 @@ text-align: center;
 -o-transition:All 1s ease-in-out;
 }
 .cui_dialog_hide {opacity:0; z-index: -9999; position: absolute;height: 50%;}
-.cui_dialog_display {opacity:1; position:relative;z-index: 1; 
+.cui_dialog_display {opacity:1; position:relative;z-index: 1; top: -13px;
 height: 50%;}
 .block-text {max-height: 50%;        z-index: 4;}
 .cui_dialog_greyed {display:none;opacity:0.4;
@@ -561,11 +578,12 @@ position: relative;}
 
 .meka_bg_zindex {
   display: block;
-  width: 600px;
+      width: 200px;
   height: auto;
   position: absolute;
 /*   padding-top: 10%; */
-  left:9%;
+    left: 23%;
+    top: 11%;
   z-index: 3;
 }
 
@@ -585,7 +603,7 @@ transition:All 1s ease-in-out;
     margin: 0 auto;
 }
 .meka_bg_zindex {
-  left: 0;
+  /* left: 0; */
 }
 }
 
@@ -1422,7 +1440,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', end
 .topbar-responsive {
   background: none;
   padding: 0 1.5rem;
-      height: 80px;
+      height: 20px;
 }
 
 .topbar-responsive .topbar-responsive-logo {
@@ -1640,3 +1658,39 @@ color: #fff;
    .text_right {
     text-align: right;
   }
+
+canvas{
+   cursor: crosshair;
+   border:#F1F1F1 solid 1px;
+
+}
+#clr div{
+       cursor: pointer;
+    width: 140px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+
+.meka_ex_inner {
+padding: 5%;
+
+}
+
+.progress_bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  padding-top: 1%;
+}
+
+.indicator{
+  background-color: #2dd9f4;
+  height: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
