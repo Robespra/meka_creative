@@ -57,20 +57,13 @@
       <div class="top-bar-title">
       <h1 class="hidden-h1">meka creative</h1>
       <a href="https://www.mekacreative.io" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical">
-      LOGO TEST<svg class="icon-svg svgicon-meka_logo_app">
-      <use xlink:href="symbol-defs.svg#svgicon-meka_logo_app"></use>
-      </svg>
+      <img class="logo_proto" src="images/meka_logo_app_proto.svg">
       </a>
       </div>
       <div id="topbar-responsive" class="topbar-responsive-links">
-      <div class="top-bar-right">
-      <ul class="menu simple vertical medium-horizontal">
-      <!-- <li><a href="#">Sign-in</a></li> -->
-             <!--  <li>
-      <button type="button" class="button hollow topbar-responsive-button" data-open="exampleModal2" onclick="track('Click-landing-mekapro-modal','Click-landing-mekapro-modal')">Login</button>
-      </li> -->
-      </ul>
-      </div>
+      <!-- <div class="top-bar-right">
+      
+      </div> -->
       </div>
       </nav>
 
@@ -169,6 +162,7 @@
       </ul> <!-- cui_dialog_buttons_after_cta cui_dialog_buttons_hidden inline-list -->
       </div><!-- cui_dialog cui_after_cta cui_dialog_hide -->
       </div><!-- small-12 medium-7 columns align-self-middle block-text -->
+      <img class="progress_bar_svg" src="images/progress_bar.png">
       </div> <!-- row align-center meka_inner -->
       <script src="js/dialog_min.js"></script>
     </div> <!-- meka_dialog_top -->
@@ -176,7 +170,9 @@
 
       <div class="row">
         <div class="small-11 medium-10 columns">
-      <canvas id="can" width="750" height="500"></canvas>
+          <div id="canvasZone">
+      <canvas id="can" width="750" height="510"></canvas>
+      </div>
       </div> <!-- column small-11 medium-8-->
       <div class="small-11 medium-2 columns">
             <div id="clr">
@@ -197,7 +193,7 @@
               <div style="background-color:rgb(255,28,0);"></div>
               <div style="background-color:rgb(13,54,0);"></div> -->
             </div><!-- clr -->
-            <a id="limpiar" href="#">Clean</a>
+            <!-- <a id="limpiar" href="#">Clean</a> -->
             <!-- <a id="borrador" href="#">Borrador</a> -->
           </div> <!-- column small-11 medium-2-->
        </div> <!-- row -->
@@ -208,15 +204,7 @@
 
 
 <footer class="footer">
-  <div class="progress_bar">
-    <div class="row align-center">
-      <div class="small-11 medium-6 columns">
-          <div class="indicator">
-            indicator here
-          </div> <!-- indicator -->
-      </div> <!-- column small-11 medium-6 -->
-    </div> <!-- row -->
-  </div> <!-- progress-bar -->
+  
  <!--  <div class="row">
    <div class="small-8 columns">
       <div class="logo hide-for-small-only">
@@ -284,18 +272,19 @@
   });
 </script>
 
-
+<!-- canvas drawing stuff -->
 <script>
         $(document).ready(function(){
             var clic=false;
-            var xCoord,yCoord="";
             var canvas=document.getElementById("can");
             var cntx=canvas.getContext("2d");
+            var image = new Image();
             cntx.strokeStyle="red";
             cntx.lineWidth=3;
             cntx.lineCap="round";
-            cntx.fillStyle="#fff";
+            cntx.fillStyle = "rgba(255, 255, 255, 1)";
             cntx.fillRect(0,0,canvas.width,canvas.height);
+
 
             $("#can").mousedown(function(canvas){
                 clic=true;
@@ -324,6 +313,7 @@
                 }
             });
 
+
             $("#clr > div").click(function(){
                 cntx.strokeStyle=$(this).css("background-color");
             });
@@ -341,5 +331,36 @@
             })
         })
 </script>
+
+<!-- circles background -->
+<script>
+var context = document.getElementById("can").getContext("2d");
+var image = new Image();
+
+function drawPattern() {
+    
+    context.fillStyle = context.createPattern(image, "repeat");
+    context.fillRect(0, 0, 730, 500);
+}
+
+image.src = "./images/canvas_circles.png";
+image.onload = drawPattern;
+</script>
+
+<!-- made canvas responsive -->
+<script>
+  function resize(){    
+    $("#can").outerHeight($(window).height()-$("#can").offset().top- Math.abs($("#can").outerHeight(true) - $("#can").outerHeight()));
+  }
+  $(document).ready(function(){
+    resize();
+    $(window).on("resize", function(){                      
+        resize();
+    });
+  });
+  </script>
+
+
+
   </body>
 </html>
