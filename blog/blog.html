@@ -39,6 +39,18 @@
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="../css/app.css">
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>
+        function track(name,label){
+        ga('send', 'event', name, 'click', label, {
+            hitCallback: function(){
+            console.log('Event sent to Google Analytics');
+                }
+            });
+        }
+</script>
+
+
   </head>
   <body>
  <div class="bg-static"> 
@@ -82,7 +94,7 @@
           <div class="nwslttr_loading_pro" id="response_pro"></div>
           </div>
           <div class="small-11 large-8 small-centered columns">
-          <input type="submit" value="Notify me" name="signup-button_pro" id="signup-button_pro" class="button primary expanded" onclick="track('Click-sign-up-pro','Click-sign-up-pro')">
+          <input type="submit" value="Notify me" name="signup-button_pro" id="signup-button_pro" class="button primary expanded" onclick="track('Click-sign-up-pro-blog','Click-sign-up-pro-blog')">
           </form>
           </div>
           <div id="response_pro"></div>
@@ -102,38 +114,38 @@
 <div class="row padding10_bottom" id="content">
       <div class="medium-8 columns">
         <div class="blog-post">
-          <a class="blog" href="articles/the_five_paradoxes_of_creativity">The five paradoxes of creativity</a> <small> 3/10/2017</small>
+          <a class="blog" href="articles/the_five_paradoxes_of_creativity" onclick="track('Click-article-five-paradox','Click-article-five-paradox')">The five paradoxes of creativity</a> <small> 3/10/2017</small>
           <img class="thumbnail" src="../../images/blog_paradoxes.svg">
           <p>Understanding creativity means discerning the different paradoxes that compose it : Order and disorder; Implication and restraint; Complexity and simplification; Divergent and convergent thinking; Solitude and collaboration. </p>
           <div class="padding5_top"></div>
-          <a href="articles/the_five_paradoxes_of_creativity">read more...</a>
+          <a href="articles/the_five_paradoxes_of_creativity" onclick="track('Click-article-five-paradox-readmore','Click-article-five-paradox-readmore')">read more...</a>
           <div class="padding5_both"></div>
         </div>
 <hr>
         <div class="blog-post">
-          <a class="blog" href="articles/empathy_and_creativity">Empathy and creativity</a> <small> 3/10/2017</small>
+          <a class="blog" href="articles/empathy_and_creativity" onclick="track('Click-article-empathy','Click-article-empathy')">Empathy and creativity</a> <small> 3/10/2017</small>
           <img class="thumbnail" src="../../images/blog_empathy.svg">
           <p>Word initially used in the aesthetics philosophy, empathy designated the intuitive comprehension of a work of art. The last neuroscience researches have enriched our knowings and placed this phenomenon as the basis of human links and of artistic communication.</p>
           <div class="padding5_top"></div>
-          <a href="articles/empathy_and_creativity.html">read more...</a>
+          <a href="articles/empathy_and_creativity.html" onclick="track('Click-article-empathy-readmore','Click-article-empathy-readmore')">read more...</a>
           <div class="padding5_both"></div>
         </div>
 <hr>
         <div class="blog-post">
-          <a class="blog" href="articles/can_solitude_stimulate_creativity">Can solitude stimulate creativity?</a><small> 3/9/2017</small>
+          <a class="blog" href="articles/can_solitude_stimulate_creativity" onclick="track('Click-article-solitude','Click-article-solitude')">Can solitude stimulate creativity?</a><small> 3/9/2017</small>
           <img class="thumbnail" src="../../images/blog_solitude.svg">
           <p>In a time like ours, where social networks are essential, the willingness to be alone can be considered in our societies as strange a behavior! Workers of the tertiary sector are paradoxically closed in “open-spaces”, and frequently meetings are called to “analyze something” (literally). </p>
           <div class="padding5_top"></div>
-          <a href="articles/can_solitude_stimulate_creativity.html">read more...</a>
+          <a href="articles/can_solitude_stimulate_creativity.html" onclick="track('Click-article-solitude-readmore','Click-article-solitude-readmore')">read more...</a>
           <div class="padding5_both"></div>
         </div>
 <hr>
         <div class="blog-post">
-          <a class="blog" href="articles/drugs_do_they_stimulate_creativity">Do drugs stimulate creativity?</a><small>6/8/2017</small>
+          <a class="blog" href="articles/drugs_do_they_stimulate_creativity" onclick="track('Click-article-drugs','Click-article-drugs')">Do drugs stimulate creativity?</a><small>6/8/2017</small>
           <img class="thumbnail" src="../../images/blog_drugs.svg">
           <p>Art has always been closely related to the use of drugs. Let’s imagine the “raw material” as something noisy and without control as if it were a tzigane orchestra in one of Kusturica’s movies. That orchestra (disguised as historical characters playing music with seafood and Pisa towers) is on the way leading to a small village. At the entrance of the village, a couple of policemen stop them and ask them to lower the noise, to get rid of their costumes and to stop playing music with seafood and Pisa towers. Does all of this make any sense? This is what happens when the material coming from the subconscious level goes through censorship before entering conscience. The “me” side of the personality rebuilds the distorted and ludic content with the help of control, order, logic and reason. </p>
           <div class="padding5_top"></div>
-          <a href="articles/drugs_do_they_stimulate_creativity">read more...</a>
+          <a href="articles/drugs_do_they_stimulate_creativity" onclick="track('Click-article-drugs-readmore','Click-article-drugs-readmore')">read more...</a>
          <div class="padding5_both"></div>
          <hr>
         </div>

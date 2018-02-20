@@ -69,6 +69,16 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 </script>
 
 
+<script>
+        function track(name,label){
+        ga('send', 'event', name, 'click', label, {
+            hitCallback: function(){
+            console.log('Event sent to Google Analytics');
+                }
+            });
+        }
+</script>
+
   </head>
   <body>
 <div class="meka">
