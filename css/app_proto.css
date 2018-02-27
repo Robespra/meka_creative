@@ -1697,3 +1697,8 @@ padding: 5%;
   padding: 0.3em;
   margin: 0.3em;
 }
+
+  .proto {
+    background: #2A2A2A;
+    margin-top: 10px solid #ffc171;
+  }
