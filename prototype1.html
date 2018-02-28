@@ -91,6 +91,7 @@
       <circle class="confetti" r="30" cy="-50" cx="0" style="transform-origin: 0px -50px"></circle>
       </svg>
       </div> -->
+      <img class="rap_casquette" src="images/casquette.svg">
       <div class="svg-logo">
       <svg class="svg-happyfreshlogo" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -160,6 +161,19 @@
       <li><a href="#cui_first_non" class="cui_btn_secondary cui_first_button2 text_link" onclick="track('ui_btn_primary cui_first_button_notsuretellmemore','ui_btn_primary cui_first_button_notsuretellmemore')">Tell me more about you, first...</a></li> -->
       </ul> <!-- cui_dialog_buttons_after_cta cui_dialog_buttons_hidden inline-list -->
       </div><!-- cui_dialog cui_after_cta cui_dialog_hide -->
+
+      <div class="cui_dialog cui_first_oui cui_dialog_hide">
+<div class="cui_dialog_message">
+<ul class="cui_first_oui_message bubble_none message">
+<li>Okay. Well...</li> 
+</ul>
+  </div> <!-- cui_dialog_message -->
+<ul class="cui_dialog_buttons cui_dialog_buttons_first_oui cui_dialog_buttons_hidden inline-list">
+  <li><a href="#cui_second_email" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes !</a></li>
+  <!-- <li><a href="#cui_first_non" class="cui_btn_secondary cui_first_oui_button2 text_link" onclick="track('cui_second_noemailtellmemore','cui_second_noemailtellmemore')">No, that’s not necessary, just tell me more about you</a></li> -->
+  </ul> <!-- cui_dialog_buttons -->
+</div> <!-- cui_first_oui -->
+
       </div><!-- small-12 medium-7 columns align-self-middle block-text -->
      <div class="small-2 right_hand"><img class="user_icon" src="images/user_icon.png">
 <div class="progress_percent">25%</div>
@@ -167,41 +181,113 @@
       </div> <!-- row align-center meka_inner -->
       <script src="js/dialog.js"></script>
     </div> <!-- meka_dialog_top -->
+
+
+ <div class="progress">
+    <div class="progress-bar-red"></div>
+  </div>
+
+
     <div class="meka_ex_inner">
 
       <div class="row">
         <div class="small-12 columns">
           <div id="canvasZone" class="display">
       <canvas height="430px" id="can"></canvas>
-      <div class="explain">
-        <p>currently assessing</p>
-        <p>convergent thinking (?)</p></div>
+      <div class="explain row align-left">
+     <div class="small-1 columns"><img class="explain_info" src="images/info.svg"></div>
+          <div class="small-8 columns"><p>currently assessing</p>
+        <p class="accent">convergent thinking</p></div>
+          </div><!-- explain-->
+      </div><!-- canvasZone-->
       </div>
       <div id="fiction" class="no-display">
 <div class="lyrics_rap">
-     todo:
-   </br>
-     - progressbar css
-     </br>
-     - user icon/log + petite étoile
-     </br>
-     - faire tomber casquette sur meka; 
-     </br>
-     - illustration rappeurs anim CSS/ microphone chaine dorée anim CSS / anim notes codepen
-     </br>
-     - audio player dribbble / Rec button dribbble
-     </br>
-     - icone pour info bottom
 
 </div><!-- lyrics rap-->
       <div class="illustr_rap">
-        <img class="logo_proto" src="images/user_icon.png">
+        <img class="rap_mic" src="images/rap_mic.svg">
+<div class="tower">
+    <div class="signal">
+        <div class="rings circle animated"></div>
+    </div>
+    <div class="dot circle"></div>
+    <div class="triangle"></div>
+</div>
+
+<div class="player circle">
+    <div class="buffering circle animated"></div>
+    <div class="triangle"></div>
+</div>
+
+<div class="text">
+    <div class="pulsing animated">Buffering</div>
+</div>
+
+
+<!-- <div class ="notes">
+  <div class="note-position-1 note-amination">
+  &#9835;
+</div>
+<div class="note-position-2 note-amination animation-delay-2">
+  &#9833;
+</div>
+<div class="note-position-3 note-amination animation-delay-1">
+  &#9839;
+</div>
+<div class="note-position-4 note-amination">
+  &#9834;
+</div>
+
+
+
+</div> -->
+
+
+        <img class="rap_vinyl" src="images/vinyl.svg">
         </div><!-- illustr_rap-->
 
-        <div class="explain">currently assessing
-        <p>fluency (?)</p></div>
+<div class="loader-container">
+      <div class="rectangle-1"></div>
+      <div class="rectangle-2"></div>
+      <div class="rectangle-3"></div>
+      <div class="rectangle-4"></div>
+      <div class="rectangle-5"></div>
+      <div class="rectangle-6"></div>
+      <div class="rectangle-5"></div>
+      <div class="rectangle-4"></div>
+      <div class="rectangle-3"></div>
+      <div class="rectangle-2"></div>
+      <div class="rectangle-1"></div> 
+    </div>
+        <div class="row align-left explain">
+          <div class="small-1 columns"><img class="explain_info" src="images/info.svg"></div>
+          <div class="small-48 columns">
+            <p>currently assessing</p>
+        <p class="accent">fluency</p></div>
+          </div>
       </div><!-- explain-->
       </div><!-- fiction-->
+
+
+      <div id="music" class="no-display">
+<div class="music player">
+     <img class="" src="images/music.png">
+
+</div><!-- music player-->
+      
+
+        <div class="row align-left explain">
+          <div class="small-1 columns"><img class="explain_info" src="images/info.svg"></div>
+          <div class="small-48 columns">
+            <p>currently assessing</p>
+        <p class="accent">fluency??</p></div>
+          </div>
+      </div><!-- explain-->
+      </div><!-- fiction-->
+
+
+
 
       </div> <!-- column small-11 medium-8-->
       <!-- <div class="small-11 medium-2 columns">

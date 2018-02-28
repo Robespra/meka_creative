@@ -15,6 +15,7 @@ $(".btn_cta_hero").click(function(e) {
    $("#clr").addClass("no-display");
    $("#fiction").removeClass("no-display");
    $("#fiction").addClass("display");
+    $(".progress-bar-red").addClass("progress-bar-red-75");
     setTimeout(function() {
        $(".cui_loader").removeClass("display_loader");
        $(".cui_loader").addClass("remove_loader");
@@ -36,6 +37,12 @@ $(".cui_first_button1").click(function(e) {
     $(".cui_dialog_buttons_first_oui").addClass("cui_dialog_buttons_displayed");
     $(".cui_first_button1").addClass("btn_selected");
     $(".svg-logo").addClass("svg-happyfreshlogo_thinking");
+       $("#fiction").removeClass("display");
+   $("#fiction").addClass("no-display");
+         $("#music").removeClass("no-display");
+   $("#music").addClass("display");
+   $(".progress-bar-red").removeClass("progress-bar-red-75");
+   $(".progress-bar-red").addClass("progress-bar-red-80");
     setTimeout(function() {
        $(".cui_loader").removeClass("display_loader");
        $(".cui_loader").addClass("remove_loader");
