@@ -5,9 +5,9 @@
 	 y="0px" viewBox="0 0 411 411" enable-background="new 0 0 411 411" xml:space="preserve">
 <g>
 	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#151E28" cx="205.5" cy="205.5" r="205.5"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#00B0D9" d="M296.7,206c0,50.1-40.6,90.7-90.7,90.7s-90.7-40.6-90.7-90.7
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF616E" d="M296.7,206c0,50.1-40.6,90.7-90.7,90.7s-90.7-40.6-90.7-90.7
 		c0-50.1,40.6-90.7,90.7-90.7S296.7,155.8,296.7,206z"/>
-	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#151E28" cx="205.5" cy="205.5" r="10.4"/>
+	<circle display="none" fill-rule="evenodd" clip-rule="evenodd" fill="#151E28" cx="205.5" cy="205.5" r="10.4"/>
 	<g>
 		<g>
 			<g>
