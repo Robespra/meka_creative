@@ -23,7 +23,6 @@
 <meta property="og:description" content="Test and improve your creativity with meka.">
 <meta property="og:site_name" content="meka">
 <meta property="og:image" content="https://www.mekacreative.io/images/logo-social.png">
-<link rel="canonical" href="www.mekacreative.io" />
 <meta http-equiv="cleartype" content="on">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="shortcut icon" href="https://www.mekacreative.io/favicon.ico">
@@ -53,7 +52,7 @@
   </head>
   <body class="proto">
 <section>
-   <nav class="top-bar topbar-responsive">
+  <!--  <nav class="top-bar topbar-responsive">
       <div class="top-bar-title">
       <h1 class="hidden-h1">meka creative</h1>
       <a href="https://www.mekacreative.io" onclick="track('Click-logo-top','Click-logo-top')" rel="canonical">
@@ -61,11 +60,11 @@
       </a>
       </div>
       <div id="topbar-responsive" class="topbar-responsive-links">
-      <!-- <div class="top-bar-right">
-      
-      </div> -->
+      <div class="top-bar-right">
+       <img class="progress_bar_svg" src="images/progress_bar.png">
       </div>
-      </nav>
+      </div>
+      </nav> -->
 
   <div class="meka">
     <div class="meka_dialog_top">
@@ -95,7 +94,7 @@
       <div class="svg-logo">
       <svg class="svg-happyfreshlogo" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-      <circle fill="#FFF" stroke="#5983FC" stroke-width="0" stroke-miterlimit="10" cx="441.5" cy="477.9" r="427.9"/>
+      <circle fill="#FFF" stroke="#f1f1f1" stroke-width="10" stroke-miterlimit="10" cx="441.5" cy="477.9" r="427.9"/>
       <g>
       <path fill="#5983FC" d="M199.2,468.1c-37.8-74.5-74.3-128.4-82.2-176.2c-9.1-46.9,10.5-87.6,57.3-115.6
       c45.9-26.7,105.1-25.8,143.1,17.1c39.2,41.2,57.1,124.5,48.2,224.1c-8.1,100.2-36.3,190.5-54.9,253.1c-19.7,63-29.7,98.4-28.8,99.6
@@ -128,8 +127,8 @@
       </div>  <!-- cui-dialog-avatar -->
       </div> <!-- cui -->
       </div><!-- meka_bg_index -->
-      <div class="small-12 medium-3"></div>
-      <div class="small-12 medium-5 columns align-self-middle block-text">
+      <div class="small-1"></div>
+      <div class="small-8 columns align-self-middle block-text">
       <div class="cui_dialog cui_button cui_dialog_display">
       <ul class="cui_after_cta_message bubble_displayed message">
       <li>In 1mn turn as many circles as recognizable objects.</li>
@@ -147,14 +146,14 @@
       <div class="cui_dialog cui_after_cta cui_dialog_hide">
       <div class="cui_dialog_message">
       <ul class="cui_after_cta_message bubble_none message">
-      <li>I can help you test and enhance your creativity.</li>
+      <li>Rap time ! Provide as much lyrics as possible on the cover song</li>
       <!-- <li>Which one would you like to start with ?</li> -->
       </ul>
       </div> <!-- cui_dialog_message -->
       <ul class="cui_dialog_buttons_after_cta cui_dialog_buttons_hidden inline-list">
-      <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_art','cui_first_button_art')">Art</a></li>
-      <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_design','cui_first_button_design')">Design</a></li>
-      <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_business','cui_first_button_business')">Business</a></li>
+      <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_art','cui_first_button_art')">Done, next !</a></li>
+      <!-- <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_design','cui_first_button_design')">Design</a></li>
+      <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_business','cui_first_button_business')">Business</a></li> -->
       <!-- <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_sciences','cui_first_button_sciences')">Sciences</a></li>
       <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_programing','cui_first_button_programing')">Programing</a></li>
       <li><a href="#cui_first_oui" class="cui_btn_primary cui_first_button1" onclick="track('cui_first_button_cooking','cui_first_cooking')">Cooking</a></li>
@@ -162,28 +161,59 @@
       </ul> <!-- cui_dialog_buttons_after_cta cui_dialog_buttons_hidden inline-list -->
       </div><!-- cui_dialog cui_after_cta cui_dialog_hide -->
       </div><!-- small-12 medium-7 columns align-self-middle block-text -->
-      <img class="progress_bar_svg" src="images/progress_bar.png">
+     <div class="small-2 right_hand"><img class="user_icon" src="images/user_icon.png">
+<div class="progress_percent">25%</div>
+     </div>
       </div> <!-- row align-center meka_inner -->
-      <script src="js/dialog_min.js"></script>
+      <script src="js/dialog.js"></script>
     </div> <!-- meka_dialog_top -->
     <div class="meka_ex_inner">
 
       <div class="row">
-        <div class="small-11 medium-10 columns">
-          <div id="canvasZone">
-      <canvas id="can" width="750" height="510"></canvas>
+        <div class="small-12 columns">
+          <div id="canvasZone" class="display">
+      <canvas height="430px" id="can"></canvas>
+      <div class="explain">
+        <p>currently assessing</p>
+        <p>convergent thinking (?)</p></div>
       </div>
+      <div id="fiction" class="no-display">
+<div class="lyrics_rap">
+     todo:
+   </br>
+     - progressbar css
+     </br>
+     - user icon/log + petite étoile
+     </br>
+     - faire tomber casquette sur meka; 
+     </br>
+     - illustration rappeurs anim CSS/ microphone chaine dorée anim CSS / anim notes codepen
+     </br>
+     - audio player dribbble / Rec button dribbble
+     </br>
+     - icone pour info bottom
+
+</div><!-- lyrics rap-->
+      <div class="illustr_rap">
+        <img class="logo_proto" src="images/user_icon.png">
+        </div><!-- illustr_rap-->
+
+        <div class="explain">currently assessing
+        <p>fluency (?)</p></div>
+      </div><!-- explain-->
+      </div><!-- fiction-->
+
       </div> <!-- column small-11 medium-8-->
-      <div class="small-11 medium-2 columns">
-            <div id="clr">
+      <!-- <div class="small-11 medium-2 columns">
+            <div id="clr" class="display">
               <div style="background-color:#2A2A2A;"></div>
               <div style="background-color:#7a7a7a;"></div>
               <div style="background-color:#9ae22c;"></div>
               <div style="background-color:#fdcd35;"></div>
               <div style="background-color:#e64345;"></div>
-              <div style="background-color:#2dd9f4;"></div>
+              <div style="background-color:#FFFFFF;"></div>
               <div style="background-color:#ae6fe8;"></div>
-              <!-- <div style="background-color:#82B82C;"></div>
+              <div style="background-color:#82B82C;"></div>
               <div style="background-color:#0099FF;"></div>
               <div style="background-color:#ff00ff;"></div>
               <div style="background-color:rgb(128,0,255);"></div>
@@ -191,7 +221,7 @@
               <div style="background-color:rgb(153,254,0);"></div>
               <div style="background-color:rgb(18,0,255);"></div>
               <div style="background-color:rgb(255,28,0);"></div>
-              <div style="background-color:rgb(13,54,0);"></div> -->
+              <div style="background-color:rgb(13,54,0);"></div>
             </div><!-- clr -->
             <!-- <a id="limpiar" href="#">Clean</a> -->
             <!-- <a id="borrador" href="#">Borrador</a> -->
@@ -279,7 +309,7 @@
             var canvas=document.getElementById("can");
             var cntx=canvas.getContext("2d");
             var image = new Image();
-            cntx.strokeStyle="red";
+            cntx.strokeStyle="#FF828C";
             cntx.lineWidth=3;
             cntx.lineCap="round";
             cntx.fillStyle = "rgba(255, 255, 255, 1)";
@@ -340,15 +370,15 @@ var image = new Image();
 function drawPattern() {
     
     context.fillStyle = context.createPattern(image, "repeat");
-    context.fillRect(0, 0, 730, 500);
+    context.fillRect(0, 0, 600, 600);
 }
 
-image.src = "./images/canvas_circles.png";
+image.src = "./images/circle_unique.png";
 image.onload = drawPattern;
 </script>
 
-<!-- made canvas responsive -->
-<script>
+<!-- made canvas responsive ajouter width="" height="" au canvas html -->
+<!-- <script>
   function resize(){    
     $("#can").outerHeight($(window).height()-$("#can").offset().top- Math.abs($("#can").outerHeight(true) - $("#can").outerHeight()));
   }
@@ -358,7 +388,7 @@ image.onload = drawPattern;
         resize();
     });
   });
-  </script>
+  </script> -->
 
 
 

@@ -9,11 +9,17 @@ $(".btn_cta_hero").click(function(e) {
     $(".cui_dialog_buttons_after_cta").removeClass("cui_dialog_buttons_hidden");
     $(".cui_dialog_buttons_after_cta").addClass("cui_dialog_buttons_displayed");
     $(".svg-logo").addClass("svg-happyfreshlogo_thinking");
+    $("#canvasZone").removeClass("display");
+   $("#canvasZone").addClass("no-display");
+    $("#clr").removeClass("display");
+   $("#clr").addClass("no-display");
+   $("#fiction").removeClass("no-display");
+   $("#fiction").addClass("display");
     setTimeout(function() {
        $(".cui_loader").removeClass("display_loader");
        $(".cui_loader").addClass("remove_loader");
        $(".svg-logo").removeClass("svg-happyfreshlogo_thinking");
-   }, 2000);
+   }, 1800);
     });
 
 $(".cui_first_button1").click(function(e) {

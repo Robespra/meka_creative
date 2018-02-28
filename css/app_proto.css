@@ -280,17 +280,22 @@ display: inline-block;
 
 .logo-top{display:block;width:150px;padding: 5%;z-index:9998;position:relative;height:auto;-webkit-transition:opacity;-webkit-transition-timing-function:ease-out;-webkit-transition-duration:500ms;}
 .logo-top:hover{opacity:0.5;filter:alpha(opacity=50);}
-.meka {font-family: 'Quicksand', sans-serif; overflow: hidden;
-background-color: #fff;
+.meka {font-family: 'Quicksand', sans-serif; overflow: hidden;     
+ -webkit-box-shadow: 6px 3px 43px -8px #1b1b1b;  
+  -moz-box-shadow:    6px 3px 43px -8px #1b1b1b;  
+  box-shadow:        6px 3px 43px -8px #1b1b1b;  
+    border-radius: 20px;
+background-color: #fff; 
   font-weight: 500;
-      width: 80%;
+       width: 26%;
+    min-width: 340px;
     margin: 3% auto;}
 .meka_inner {
+  height: 132px;
       padding: 0;
     margin: 0;
     max-width: 100%;
     position: relative;
-    height: 200px;
 background: rgba(255,97,110,1);
 background: -moz-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,97,110,1)), color-stop(100%, rgba(255,193,113,1)));
@@ -304,7 +309,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', end
 .z-index_bottom {
   z-index: 9999;
 }
-.cui_dialog{overflow: hidden;max-height: 450px;}
+.cui_dialog{/* overflow: hidden; */max-height: 450px;}
 .btn_cta_hero{
 	margin-top: 5%;
 	background-color:#ffc171;
@@ -477,7 +482,6 @@ list-style: none;
 
 .cui_dialog_buttons_displayed li {
 float: left;
-margin: 1% 3% 19px 0;
 }
 
 a.text_link {
@@ -485,8 +489,8 @@ a.text_link {
 }
 
 .cui_btn_primary {
-  border-radius: 10px;
-  padding: 10px;
+    border-radius: 5px;
+    padding: 5px;
   color: #ff616e;
   background-color:#f1f1f1; 
 }
@@ -516,8 +520,8 @@ color: #5b4e60;
 .cui_loader {     font-size: 100px;
     opacity: 0;
     position: absolute;
- left: 29%;
-    top: 35%;
+    left: 14%;
+    top: -6%;
     text-align: center;
 -webkit-transition: all 1s ease-in-out;  
 -moz-transition: all 1s ease-in-out;  
@@ -550,8 +554,13 @@ text-align: center;
 -o-transition:All 1s ease-in-out;
 }
 .cui_dialog_hide {opacity:0; z-index: -9999; position: absolute;height: 50%;}
-.cui_dialog_display {opacity:1; position:relative;z-index: 1; top: -13px;    left: -40px;
-height: 50%;}
+.cui_dialog_display {    opacity: 1;
+    position: relative;
+    z-index: 1;
+    top: -10px;
+    font-size: 0.8em;
+    height: 50%;
+    left: 11%;}
 .block-text {max-height: 50%;        z-index: 4;}
 .cui_dialog_greyed {display:none;opacity:0.4;
 transform: rotate(0deg) scale(0.80) skew(1deg) translate(10px);
@@ -578,11 +587,11 @@ position: relative;}
 
 .meka_bg_zindex {
   display: block;
-      width: 200px;
+      width: 100px;
   height: auto;
   position: absolute;
 /*   padding-top: 10%; */
-    left: 20%;
+    left: 3%;
     top: 11%;
   z-index: 3;
 }
@@ -1670,19 +1679,29 @@ color: #fff;
 
 .meka_ex_inner {
 padding: 5%;
+    min-height: 470px;
 
 }
 
 
 
 #can{
-  min-height: 500px;
-  min-width: 300px;
   border: none; 
   cursor: crosshair; 
   width: 100%;
-  background-color: red;
+  animation: introcircles 3s 1;
 }
+@keyframes introcircles{
+  0% {
+    opacity: 0;
+    background-color: red;
+  }
+    100% {
+    opacity: 1;
+    background-color: green;
+  } 
+}
+
 
 .logo_proto {
   width: 150px;
@@ -1699,6 +1718,56 @@ padding: 5%;
 }
 
   .proto {
-    background: #2A2A2A;
-    margin-top: 10px solid #ffc171;
+    /* background: #2A2A2A; */
+   /* border-top: 10px solid #FFF; */
+    background: rgba(255,97,110,1);
+background: -moz-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,97,110,1)), color-stop(100%, rgba(255,193,113,1)));
+background: -webkit-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
+background: -o-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
+background: linear-gradient(to right, rgba(255,97,110,1) 0%, rgba(255,193,113,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff616e', endColorstr='#ffc171', GradientType=1 );
+  }
+
+
+#canvasZone {
+      height: 430px;
+}
+.display {
+  display: block;
+}
+.no-display {
+  display: none;
+}
+.right_hand {
+  position: relative;
+}
+.user_icon{
+      width: 40px;
+    float: right;
+    margin-right: -9px;
+    padding-top: 11%;
+}
+
+.meka_dialog_top {
+  border-bottom: 10px solid #ff616e;
+}
+
+.progress_percent {
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+    color: #FFF;
+    }
+
+.explain {
+      color: #ddd;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.explain p {
+  margin-bottom: 0;
   }
