@@ -51,7 +51,10 @@
 </script>
   </head>
   <body class="proto">
+
+
 <section>
+  <img class="proto_deco_points" src="images/proto_deco_points.svg">
   <!--  <nav class="top-bar topbar-responsive">
       <div class="top-bar-title">
       <h1 class="hidden-h1">meka creative</h1>
@@ -165,18 +168,22 @@
       <div class="cui_dialog cui_first_oui cui_dialog_hide">
 <div class="cui_dialog_message">
 <ul class="cui_first_oui_message bubble_none message">
-<li>Okay. Well...</li> 
+<li>Use the boxes to make music combinations you find pleasing</li> 
 </ul>
   </div> <!-- cui_dialog_message -->
 <ul class="cui_dialog_buttons cui_dialog_buttons_first_oui cui_dialog_buttons_hidden inline-list">
-  <li><a href="#cui_second_email" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">Yes !</a></li>
+  <li><a href="#cui_second_email" class="cui_btn_primary cui_first_oui_button1" onclick="track('cui_second_yesemail','cui_second_yesemail')">I like that one, next!</a></li>
   <!-- <li><a href="#cui_first_non" class="cui_btn_secondary cui_first_oui_button2 text_link" onclick="track('cui_second_noemailtellmemore','cui_second_noemailtellmemore')">No, that’s not necessary, just tell me more about you</a></li> -->
   </ul> <!-- cui_dialog_buttons -->
 </div> <!-- cui_first_oui -->
 
       </div><!-- small-12 medium-7 columns align-self-middle block-text -->
      <div class="small-2 right_hand"><img class="user_icon" src="images/user_icon.png">
-<div class="progress_percent">25%</div>
+<div class="progress_percent">
+  <div class="seventy percent_display">70%</div>
+  <div class="seventyfive percent_nodisplay">75%</div>
+  <div class="eighty percent_nodisplay">80%</div>
+</div>
      </div>
       </div> <!-- row align-center meka_inner -->
       <script src="js/dialog.js"></script>
@@ -193,8 +200,11 @@
       <div class="row">
         <div class="small-12 columns">
           <div id="canvasZone" class="display">
+
+            <!-- image qui couvre canvas pour vidéos!!! -->
+            <!-- <img class="dessin_step1" src="images/dessin_step1.jpg"> -->
       <canvas height="430px" id="can"></canvas>
-      <div class="explain row align-left">
+      <div class="explain row align-left" style="margin-left: -31px; margin-top:10px">
      <div class="small-1 columns"><img class="explain_info" src="images/info.svg"></div>
           <div class="small-8 columns"><p>currently assessing</p>
         <p class="accent">convergent thinking</p></div>
@@ -222,6 +232,7 @@
       <div class="player_container">
 <div class="player circle">
     <div class="buffering circle animated"></div>
+    <div class="rec"></div>
     <div class="triangle"></div>
 </div>
 
@@ -241,9 +252,6 @@
 <div class="note-position-4 note-amination">
   &#9834;
 </div>
-
-
-
 </div> -->
 
 
@@ -252,25 +260,56 @@
           <div class="small-48 columns">
             <p>currently assessing</p>
         <p class="accent">fluency</p></div>
-          </div>
-      </div><!-- explain-->
+          </div><!-- explain-->
       </div><!-- fiction-->
 
 
-      <div id="music" class="no-display">
-<div class="music player">
-     <img class="" src="images/music.png">
+      <div id="music_combs" class="no-display">
+<div class="music_boxes">
+  <div class="row align-center instruments">
+  <div class="column small-3">Drums</div>
+  <div class="column small-3">Bass</div>
+  <div class="column small-3">Chords</div>
+  <div class="column small-3">Melody</div>
+</div>
+<div class="row align-center">
+  <div class="column small-3 box box1"><div class="triangle_comb triangle_comb1"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+</div>
 
-</div><!-- music player-->
+<div class="row align-center">
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box box2"><div class="triangle_comb triangle_comb2"></div></div>
+</div>
+
+<div class="row align-center">
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box box3"><div class="triangle_comb triangle_comb3"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+</div>
+
+<div class="row align-center">
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box box4"><div class="triangle_comb triangle_comb4"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+  <div class="column small-3 box"><div class="triangle_comb"></div></div>
+</div>
+
+</div><!-- music_boxes-->
       
 
-        <div class="row align-left explain">
+        <div class="row align-left explain" style="margin-top:75px">
           <div class="small-1 columns"><img class="explain_info" src="images/info.svg"></div>
           <div class="small-48 columns">
             <p>currently assessing</p>
-        <p class="accent">fluency??</p></div>
+        <p class="accent">Originality, Pleasingness, Boundary breaking, Trust in own senses.</p></div>
           </div>
-      </div><!-- explain-->
+      </div><!-- music combs-->
       </div><!-- fiction-->
 
 
@@ -302,7 +341,9 @@
        </div> <!-- row -->
     </div> <!-- meka_ex_inner --> 
   </div> <!-- meka -->
-
+<svg class="icon-svg bg_round1">
+  <use xlink:href="../symbol-defs.svg#bg_round"></use>
+</svg>
 </section>
 
 
@@ -462,8 +503,6 @@ image.onload = drawPattern;
     });
   });
   </script> -->
-
-
 
   </body>
 </html>
