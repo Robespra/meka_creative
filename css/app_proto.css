@@ -287,8 +287,8 @@ display: inline-block;
 /*     border-radius: 20px; */
 background-color: #fff; 
   font-weight: 500;
-       width: 26%;
-    min-width: 340px;
+/*        width: 26%; */
+    width: 340px;
     margin: 3% auto;}
 .meka_inner {
       z-index: 999;
